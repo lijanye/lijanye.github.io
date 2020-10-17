@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>js部分 | 前端进阶之路</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="李建业的个人网站">
+    <link rel="preload" href="/assets/css/0.styles.ccac5a78.css" as="style"><link rel="preload" href="/assets/js/app.bf15a726.js" as="script"><link rel="preload" href="/assets/js/2.9914e370.js" as="script"><link rel="preload" href="/assets/js/31.d7f7e3f3.js" as="script"><link rel="prefetch" href="/assets/js/10.3e3a10fc.js"><link rel="prefetch" href="/assets/js/100.c070838a.js"><link rel="prefetch" href="/assets/js/101.630f88a2.js"><link rel="prefetch" href="/assets/js/102.de907b7b.js"><link rel="prefetch" href="/assets/js/103.aecf6a67.js"><link rel="prefetch" href="/assets/js/104.b43d7e63.js"><link rel="prefetch" href="/assets/js/105.9ec17f1e.js"><link rel="prefetch" href="/assets/js/106.afa2e80e.js"><link rel="prefetch" href="/assets/js/107.bbf08f03.js"><link rel="prefetch" href="/assets/js/108.d38ce95b.js"><link rel="prefetch" href="/assets/js/109.a243c2de.js"><link rel="prefetch" href="/assets/js/11.119a2a91.js"><link rel="prefetch" href="/assets/js/110.af584200.js"><link rel="prefetch" href="/assets/js/111.ff3df340.js"><link rel="prefetch" href="/assets/js/112.f53353ae.js"><link rel="prefetch" href="/assets/js/113.8a8a597b.js"><link rel="prefetch" href="/assets/js/114.e0e3dcf1.js"><link rel="prefetch" href="/assets/js/115.3754ef74.js"><link rel="prefetch" href="/assets/js/116.2cf4740f.js"><link rel="prefetch" href="/assets/js/117.381bda49.js"><link rel="prefetch" href="/assets/js/118.f005ef30.js"><link rel="prefetch" href="/assets/js/119.918050de.js"><link rel="prefetch" href="/assets/js/12.b26bcbad.js"><link rel="prefetch" href="/assets/js/120.382b41e0.js"><link rel="prefetch" href="/assets/js/121.5f01d5eb.js"><link rel="prefetch" href="/assets/js/122.b7c8c1b3.js"><link rel="prefetch" href="/assets/js/123.3ce388b5.js"><link rel="prefetch" href="/assets/js/124.eb8ff82c.js"><link rel="prefetch" href="/assets/js/125.d0eadf0e.js"><link rel="prefetch" href="/assets/js/126.afeba2c2.js"><link rel="prefetch" href="/assets/js/127.6045d80e.js"><link rel="prefetch" href="/assets/js/128.1402e006.js"><link rel="prefetch" href="/assets/js/129.c557ba45.js"><link rel="prefetch" href="/assets/js/13.59e5b700.js"><link rel="prefetch" href="/assets/js/130.294d6092.js"><link rel="prefetch" href="/assets/js/131.35a85b89.js"><link rel="prefetch" href="/assets/js/132.aa21cc50.js"><link rel="prefetch" href="/assets/js/133.08de30f9.js"><link rel="prefetch" href="/assets/js/134.3c431fd0.js"><link rel="prefetch" href="/assets/js/135.bdb92649.js"><link rel="prefetch" href="/assets/js/136.fd76210b.js"><link rel="prefetch" href="/assets/js/137.ac5e5fad.js"><link rel="prefetch" href="/assets/js/138.d3166269.js"><link rel="prefetch" href="/assets/js/139.ff8bf781.js"><link rel="prefetch" href="/assets/js/14.648c9c56.js"><link rel="prefetch" href="/assets/js/140.8f61f115.js"><link rel="prefetch" href="/assets/js/141.d5c26b3c.js"><link rel="prefetch" href="/assets/js/142.8497c0f9.js"><link rel="prefetch" href="/assets/js/143.e25cf2f7.js"><link rel="prefetch" href="/assets/js/144.af888231.js"><link rel="prefetch" href="/assets/js/145.4dc530a9.js"><link rel="prefetch" href="/assets/js/146.6fe04948.js"><link rel="prefetch" href="/assets/js/147.5be925ff.js"><link rel="prefetch" href="/assets/js/148.2e8f71e4.js"><link rel="prefetch" href="/assets/js/149.f11b1b7c.js"><link rel="prefetch" href="/assets/js/15.41a8af46.js"><link rel="prefetch" href="/assets/js/150.74e1a167.js"><link rel="prefetch" href="/assets/js/151.c740ad7c.js"><link rel="prefetch" href="/assets/js/152.65faae8d.js"><link rel="prefetch" href="/assets/js/153.eac2b5e6.js"><link rel="prefetch" href="/assets/js/154.f4ca727d.js"><link rel="prefetch" href="/assets/js/155.911f2adb.js"><link rel="prefetch" href="/assets/js/156.237971a3.js"><link rel="prefetch" href="/assets/js/157.6c6d3a2b.js"><link rel="prefetch" href="/assets/js/158.a6f45072.js"><link rel="prefetch" href="/assets/js/159.7fb85e96.js"><link rel="prefetch" href="/assets/js/16.6006d673.js"><link rel="prefetch" href="/assets/js/160.23bbf76c.js"><link rel="prefetch" href="/assets/js/161.1f84e360.js"><link rel="prefetch" href="/assets/js/162.7672e71f.js"><link rel="prefetch" href="/assets/js/163.807c8cfe.js"><link rel="prefetch" href="/assets/js/164.fd3485d2.js"><link rel="prefetch" href="/assets/js/165.5de68ab2.js"><link rel="prefetch" href="/assets/js/166.65608c6d.js"><link rel="prefetch" href="/assets/js/167.12160df8.js"><link rel="prefetch" href="/assets/js/168.4871f71c.js"><link rel="prefetch" href="/assets/js/169.c9fa0782.js"><link rel="prefetch" href="/assets/js/17.8db9c959.js"><link rel="prefetch" href="/assets/js/170.8424a255.js"><link rel="prefetch" href="/assets/js/171.83b159bf.js"><link rel="prefetch" href="/assets/js/172.6ecb4179.js"><link rel="prefetch" href="/assets/js/173.4c3bbec2.js"><link rel="prefetch" href="/assets/js/174.8d229413.js"><link rel="prefetch" href="/assets/js/175.2a22db32.js"><link rel="prefetch" href="/assets/js/176.ed1921b9.js"><link rel="prefetch" href="/assets/js/177.743221b4.js"><link rel="prefetch" href="/assets/js/178.13da533c.js"><link rel="prefetch" href="/assets/js/179.b3b516d6.js"><link rel="prefetch" href="/assets/js/18.bca0632c.js"><link rel="prefetch" href="/assets/js/180.bef8dbf4.js"><link rel="prefetch" href="/assets/js/181.af747cb1.js"><link rel="prefetch" href="/assets/js/182.11d95f03.js"><link rel="prefetch" href="/assets/js/183.a4ad2f04.js"><link rel="prefetch" href="/assets/js/184.ccfcfdfd.js"><link rel="prefetch" href="/assets/js/185.94c5ba7f.js"><link rel="prefetch" href="/assets/js/186.5bb64400.js"><link rel="prefetch" href="/assets/js/187.50f8994e.js"><link rel="prefetch" href="/assets/js/188.56e7c639.js"><link rel="prefetch" href="/assets/js/189.024d459e.js"><link rel="prefetch" href="/assets/js/19.bf8484b2.js"><link rel="prefetch" href="/assets/js/190.7c32ce22.js"><link rel="prefetch" href="/assets/js/191.b270044d.js"><link rel="prefetch" href="/assets/js/192.010a7157.js"><link rel="prefetch" href="/assets/js/193.17c9019a.js"><link rel="prefetch" href="/assets/js/194.81dcffa1.js"><link rel="prefetch" href="/assets/js/195.0fe3aa11.js"><link rel="prefetch" href="/assets/js/196.03b7cfb4.js"><link rel="prefetch" href="/assets/js/197.e29c511b.js"><link rel="prefetch" href="/assets/js/198.195612c8.js"><link rel="prefetch" href="/assets/js/199.dadda350.js"><link rel="prefetch" href="/assets/js/20.8d9367c6.js"><link rel="prefetch" href="/assets/js/200.aa0f802e.js"><link rel="prefetch" href="/assets/js/201.d531ad43.js"><link rel="prefetch" href="/assets/js/202.3971536c.js"><link rel="prefetch" href="/assets/js/203.acdb4369.js"><link rel="prefetch" href="/assets/js/204.b7436231.js"><link rel="prefetch" href="/assets/js/205.77c06c8c.js"><link rel="prefetch" href="/assets/js/206.ad1867f9.js"><link rel="prefetch" href="/assets/js/207.f096e0a8.js"><link rel="prefetch" href="/assets/js/208.ecd7a6a2.js"><link rel="prefetch" href="/assets/js/209.211ae34c.js"><link rel="prefetch" href="/assets/js/21.917c196b.js"><link rel="prefetch" href="/assets/js/210.bd411373.js"><link rel="prefetch" href="/assets/js/211.b8568fe3.js"><link rel="prefetch" href="/assets/js/212.e1508d95.js"><link rel="prefetch" href="/assets/js/213.4e138bef.js"><link rel="prefetch" href="/assets/js/214.8ae8c08a.js"><link rel="prefetch" href="/assets/js/215.32ceb492.js"><link rel="prefetch" href="/assets/js/216.bc71ab6b.js"><link rel="prefetch" href="/assets/js/217.2f4e25e3.js"><link rel="prefetch" href="/assets/js/218.76c9d34f.js"><link rel="prefetch" href="/assets/js/219.72b36168.js"><link rel="prefetch" href="/assets/js/22.652c5e61.js"><link rel="prefetch" href="/assets/js/220.060a53f4.js"><link rel="prefetch" href="/assets/js/221.27bf7742.js"><link rel="prefetch" href="/assets/js/222.cd001ecb.js"><link rel="prefetch" href="/assets/js/223.d2c57344.js"><link rel="prefetch" href="/assets/js/224.e62fcf41.js"><link rel="prefetch" href="/assets/js/225.4db551b3.js"><link rel="prefetch" href="/assets/js/226.a68cf88b.js"><link rel="prefetch" href="/assets/js/227.e796e298.js"><link rel="prefetch" href="/assets/js/228.b3d4fd56.js"><link rel="prefetch" href="/assets/js/229.4556a008.js"><link rel="prefetch" href="/assets/js/23.bf415662.js"><link rel="prefetch" href="/assets/js/230.8ba9913d.js"><link rel="prefetch" href="/assets/js/231.f2127375.js"><link rel="prefetch" href="/assets/js/232.012fa50e.js"><link rel="prefetch" href="/assets/js/233.df438721.js"><link rel="prefetch" href="/assets/js/234.18f5e52a.js"><link rel="prefetch" href="/assets/js/235.3864aa11.js"><link rel="prefetch" href="/assets/js/236.7db36635.js"><link rel="prefetch" href="/assets/js/237.009e87ce.js"><link rel="prefetch" href="/assets/js/238.f3eaaf8c.js"><link rel="prefetch" href="/assets/js/239.73a9e13b.js"><link rel="prefetch" href="/assets/js/24.f8d388e7.js"><link rel="prefetch" href="/assets/js/240.9d94866f.js"><link rel="prefetch" href="/assets/js/241.1ed8ad95.js"><link rel="prefetch" href="/assets/js/242.7cf7cbde.js"><link rel="prefetch" href="/assets/js/243.25c6dc7a.js"><link rel="prefetch" href="/assets/js/244.8651162d.js"><link rel="prefetch" href="/assets/js/245.ad93af46.js"><link rel="prefetch" href="/assets/js/246.640d71cb.js"><link rel="prefetch" href="/assets/js/247.a1ff4c4b.js"><link rel="prefetch" href="/assets/js/248.b0dcebeb.js"><link rel="prefetch" href="/assets/js/249.ddb0ec50.js"><link rel="prefetch" href="/assets/js/25.6b759b40.js"><link rel="prefetch" href="/assets/js/250.bc2a2c04.js"><link rel="prefetch" href="/assets/js/251.48724cf7.js"><link rel="prefetch" href="/assets/js/252.ff0ae3a7.js"><link rel="prefetch" href="/assets/js/26.3955defe.js"><link rel="prefetch" href="/assets/js/27.fff938af.js"><link rel="prefetch" href="/assets/js/28.05d77c71.js"><link rel="prefetch" href="/assets/js/29.0486d398.js"><link rel="prefetch" href="/assets/js/3.b41e8f36.js"><link rel="prefetch" href="/assets/js/30.2d668802.js"><link rel="prefetch" href="/assets/js/32.f1544949.js"><link rel="prefetch" href="/assets/js/33.19cceffe.js"><link rel="prefetch" href="/assets/js/34.13f8b2d4.js"><link rel="prefetch" href="/assets/js/35.5cd2160b.js"><link rel="prefetch" href="/assets/js/36.b1ec503a.js"><link rel="prefetch" href="/assets/js/37.a7bc0a92.js"><link rel="prefetch" href="/assets/js/38.b0f58b0d.js"><link rel="prefetch" href="/assets/js/39.ac2562d1.js"><link rel="prefetch" href="/assets/js/4.5ed19beb.js"><link rel="prefetch" href="/assets/js/40.70a8a89e.js"><link rel="prefetch" href="/assets/js/41.df5add88.js"><link rel="prefetch" href="/assets/js/42.1df72958.js"><link rel="prefetch" href="/assets/js/43.2c44e64f.js"><link rel="prefetch" href="/assets/js/44.c99fca0b.js"><link rel="prefetch" href="/assets/js/45.c71aca2b.js"><link rel="prefetch" href="/assets/js/46.db22f4e4.js"><link rel="prefetch" href="/assets/js/47.0d4edc77.js"><link rel="prefetch" href="/assets/js/48.1a3654cd.js"><link rel="prefetch" href="/assets/js/49.d61e9e4e.js"><link rel="prefetch" href="/assets/js/5.aeb0e865.js"><link rel="prefetch" href="/assets/js/50.10ebcce1.js"><link rel="prefetch" href="/assets/js/51.ded02449.js"><link rel="prefetch" href="/assets/js/52.fb61bbf8.js"><link rel="prefetch" href="/assets/js/53.795df375.js"><link rel="prefetch" href="/assets/js/54.8c76b5cb.js"><link rel="prefetch" href="/assets/js/55.cb9f3438.js"><link rel="prefetch" href="/assets/js/56.84e1cca5.js"><link rel="prefetch" href="/assets/js/57.8104aa3a.js"><link rel="prefetch" href="/assets/js/58.94e6a6a2.js"><link rel="prefetch" href="/assets/js/59.1a9c6165.js"><link rel="prefetch" href="/assets/js/6.2e68958b.js"><link rel="prefetch" href="/assets/js/60.2e690a2b.js"><link rel="prefetch" href="/assets/js/61.f43750f3.js"><link rel="prefetch" href="/assets/js/62.f2e9bbf0.js"><link rel="prefetch" href="/assets/js/63.b892bcbe.js"><link rel="prefetch" href="/assets/js/64.76762f3d.js"><link rel="prefetch" href="/assets/js/65.c2b2d6ae.js"><link rel="prefetch" href="/assets/js/66.1c6088e8.js"><link rel="prefetch" href="/assets/js/67.23c3a64a.js"><link rel="prefetch" href="/assets/js/68.70fd9b40.js"><link rel="prefetch" href="/assets/js/69.227127da.js"><link rel="prefetch" href="/assets/js/7.e3114788.js"><link rel="prefetch" href="/assets/js/70.3a7a4c5f.js"><link rel="prefetch" href="/assets/js/71.75d1df6c.js"><link rel="prefetch" href="/assets/js/72.83a6e0cb.js"><link rel="prefetch" href="/assets/js/73.79e93033.js"><link rel="prefetch" href="/assets/js/74.1d911f55.js"><link rel="prefetch" href="/assets/js/75.e5621c86.js"><link rel="prefetch" href="/assets/js/76.1ebc945d.js"><link rel="prefetch" href="/assets/js/77.43515b31.js"><link rel="prefetch" href="/assets/js/78.285ba68b.js"><link rel="prefetch" href="/assets/js/79.0a8f75dc.js"><link rel="prefetch" href="/assets/js/8.cabcbc6f.js"><link rel="prefetch" href="/assets/js/80.17b625cc.js"><link rel="prefetch" href="/assets/js/81.f8a544fe.js"><link rel="prefetch" href="/assets/js/82.6559988a.js"><link rel="prefetch" href="/assets/js/83.78a81947.js"><link rel="prefetch" href="/assets/js/84.3c5c3bd3.js"><link rel="prefetch" href="/assets/js/85.92431359.js"><link rel="prefetch" href="/assets/js/86.a99c559f.js"><link rel="prefetch" href="/assets/js/87.f57f7818.js"><link rel="prefetch" href="/assets/js/88.29563aba.js"><link rel="prefetch" href="/assets/js/89.e207ae6f.js"><link rel="prefetch" href="/assets/js/9.fc39f9e7.js"><link rel="prefetch" href="/assets/js/90.6cacb42e.js"><link rel="prefetch" href="/assets/js/91.932fd0a6.js"><link rel="prefetch" href="/assets/js/92.0abfdb13.js"><link rel="prefetch" href="/assets/js/93.1debaef7.js"><link rel="prefetch" href="/assets/js/94.44407046.js"><link rel="prefetch" href="/assets/js/95.90739ee8.js"><link rel="prefetch" href="/assets/js/96.141e9e7a.js"><link rel="prefetch" href="/assets/js/97.aec85037.js"><link rel="prefetch" href="/assets/js/98.d00f2e8f.js"><link rel="prefetch" href="/assets/js/99.d6387051.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccac5a78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端进阶之路</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://lijanye.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://lijanye.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS手写</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTTP</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>LeetCode</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>二叉树</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>链表</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>面试</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/interview/css.html" class="sidebar-link">CSS 部分</a></li><li><a href="/interview/html.html" class="sidebar-link">html部分</a></li><li><a href="/interview/js.html" aria-current="page" class="active sidebar-link">js部分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/js.html#duplicate-1-2-3-4-5-1-2-3-4-5-1-2-3-4-5" class="sidebar-link">duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/js.html#_27-请说明三元表达式中-三元-这个词代表什么" class="sidebar-link">27.请说明三元表达式中“三元”这个词代表什么？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_28-什么是-use-strict-使用它有什么优缺点" class="sidebar-link">28.什么是&quot;use strict&quot;;？使用它有什么优缺点？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_29-创建一个循环-从-1-迭代到-100-3的倍数时输出-fizz-5的倍数时输出-buzz-同时为3和5的倍数时输出-fizzbuzz-。" class="sidebar-link">29.创建一个循环，从 1 迭代到 100，3的倍数时输出 &quot;fizz&quot;，5的倍数时输出 &quot;buzz&quot;，同时为3和5的倍数时输出 &quot;fizzbuzz&quot;。</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_30-为什么不要使用全局作用域" class="sidebar-link">30.为什么不要使用全局作用域？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_31-为什么要使用load事件-这个事件有什么缺点吗-你知道一些代替方案吗-为什么使用它们" class="sidebar-link">31.为什么要使用load事件？这个事件有什么缺点吗？你知道一些代替方案吗，为什么使用它们？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_32-请解释单页应用是什么-如何使其对-seo-友好。" class="sidebar-link">32.请解释单页应用是什么，如何使其对 SEO 友好。</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_33-你对-promises-及其-polyfill-的掌握程度如何" class="sidebar-link">33.你对 Promises 及其 polyfill 的掌握程度如何？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_34-promise代替回调函数有什么优缺点" class="sidebar-link">34.Promise代替回调函数有什么优缺点？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_35-你使用什么工具和技巧调试-javascript-代码" class="sidebar-link">35.你使用什么工具和技巧调试 JavaScript 代码？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_36-你使用什么语句遍历对象的属性和数组的元素" class="sidebar-link">36.你使用什么语句遍历对象的属性和数组的元素？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_36-请解释可变对象和不可变对象之间的区别。" class="sidebar-link">36.请解释可变对象和不可变对象之间的区别。</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_37-请解释同步和异步函数之间的区别。" class="sidebar-link">37.请解释同步和异步函数之间的区别。</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_38-什么是事件循环-调用堆栈和任务队列之间有什么区别" class="sidebar-link">38.什么是事件循环？调用堆栈和任务队列之间有什么区别？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_39-请解释-function-foo-和-var-foo-function-之间-foo-的用法上的区别。" class="sidebar-link">39.请解释  function foo() {} 和  var foo = function() {}  之间  foo  的用法上的区别。</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_40-使用let、var和const创建变量有什么区别" class="sidebar-link">40.使用let、var和const创建变量有什么区别？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_41-高阶函数-higher-order-的定义是什么" class="sidebar-link">41.高阶函数 （higher-order） 的定义是什么？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_42-请给出一个解构-destructuring-对象或数组的例子。" class="sidebar-link">42.请给出一个解构 （destructuring） 对象或数组的例子。</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_43-es6-的模板字符串为生成字符串提供了很大的灵活性-你可以举个例子吗" class="sidebar-link">43. ES6  的模板字符串为生成字符串提供了很大的灵活性，你可以举个例子吗？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_44-你能举出一个柯里化函数-curry-function-的例子吗-它有哪些好处" class="sidebar-link">44.你能举出一个柯里化函数（curry function）的例子吗？它有哪些好处？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_45-使用扩展运算符-spread-的好处是什么-它与使用剩余参数语句-rest-有什么区别" class="sidebar-link">45.使用扩展运算符（spread）的好处是什么，它与使用剩余参数语句（rest）有什么区别？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_46-如何在文件之间共用代码" class="sidebar-link">46.如何在文件之间共用代码？</a></li><li class="sidebar-sub-header"><a href="/interview/js.html#_47-什么情况下会用到静态类成员" class="sidebar-link">47.什么情况下会用到静态类成员？</a></li></ul></li></ul></li><li><a href="/interview/面试.html" class="sidebar-link">面经</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Next</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="js部分"><a href="#js部分" class="header-anchor">#</a> js部分</h3> <h3 id="导读"><a href="#导读" class="header-anchor">#</a> 导读</h3> <blockquote><p>都说金九银十是一个面试的好季节，最近在<code>GitHub</code>上看到了一些关于前端的面试题，也比较基础，在这里整理了一下，因为内容较多，在这里分为<code>HTML</code>、<code>CSS</code>、<code>JavaScript</code>三篇，希望可以对大家有所帮助，趁着“好季节”，找到自己心仪的工作,当然也包括我自己在内，大家一起加油哈！</p></blockquote> <blockquote><p>因为掘金的某条沸点，在这里先说明一下，本篇文章适合目前正在找工作或者觉得自己的基础不太扎实的小伙伴，大神就跳过吧O(∩_∩)O。</p></blockquote> <blockquote><p>转发自 https://github.com/yangshun/front-end-interview-handbook。</p></blockquote> <ul><li><a href="https://juejin.im/post/5d7776875188253a830541db" target="_blank" rel="noopener noreferrer">HTML篇地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a><br></li> <li><a href="https://juejin.im/post/5d77a7416fb9a06ae836370e" target="_blank" rel="noopener noreferrer">CSS篇地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h3 id="_1-请解释事件委托。"><a href="#_1-请解释事件委托。" class="header-anchor">#</a> 1.请解释事件委托。</h3> <hr> <p>事件委托是将事件监听器添加到父元素，而不是每个子元素单独设置事件监听器。当触发子元素时，事件会冒泡到父元素，监听器就会触发。这种技术的好处是：</p> <blockquote><p>1.内存占用减少，因为只需要一个父元素的事件处理程序，而不必为每个后代都添加事件处理程序。<br>
+2.无需从已删除的元素中解绑处理程序，也无需将处理程序绑定到新元素上。</p></blockquote> <h3 id="_2-请简述javascript中的this。"><a href="#_2-请简述javascript中的this。" class="header-anchor">#</a> 2.请简述<code>JavaScript</code>中的<code>this</code>。</h3> <hr> <p>JS 中的<font color="#FF7F50" size="3"> this  </font>是一个相对复杂的概念，不是简单几句能解释清楚的。粗略地讲，函数的调用方式决定了<font color="#FF7F50" size="3"> this  </font>的值。我阅读了网上很多关于<font color="#FF7F50" size="3"> this  </font>的文章，Arnav Aggrawal 写的比较清楚。<font color="#FF7F50" size="3"> this  </font>取值符合以下规则：</p> <blockquote><p>1.在调用函数时使用<code>new</code>关键字，函数内的<code>this</code>是一个全新的对象。<br>
+2.如果<code>apply</code>、<code>call</code>或<code>bind</code>方法用于调用、创建一个函数，函数内的 <code>this</code> 就是作为参数传入这些方法的对象。<br>
+3.当函数作为对象里的方法被调用时，函数内的<code>this</code>是调用该函数的对象。比如当<code>obj.method()</code>被调用时，函数内的 <code>this</code> 将绑定到<code>obj</code>对象。<br>
+4.如果调用函数不符合上述规则，那么<code>this</code>的值指向全局对象<code>（global object）</code>。浏览器环境下<code>this</code>的值指向<code>window</code>对象，但是在严格模式下<code>('use strict')</code>，<code>this</code>的值为<code>undefined</code>。<br>
+5.如果符合上述多个规则，则较高的规则（1 号最高，4 号最低）将决定<code>this</code>的值。<br>
+6.如果该函数是 <code>ES2015</code> 中的箭头函数，将忽略上面的所有规则，<code>this</code>被设置为它被创建时的上下文。</p></blockquote> <h3 id="_3-请解释原型继承的工作原理。"><a href="#_3-请解释原型继承的工作原理。" class="header-anchor">#</a> 3.请解释原型继承的工作原理。</h3> <hr> <p>这是一个非常常见的 <code>JavaScript</code> 问题。所有 <code>JS</code> 对象都有一个<code>prototype</code>属性，指向它的原型对象。当试图访问一个对象的属性时，如果没有在该对象上找到，它还会搜寻该对象的原型，以及该对象的原型的原型，依次层层向上搜索，直到找到一个名字匹配的属性或到达原型链的末尾。这种行为是在模拟经典的继承，但是与其说是继承，不如说是委托。</p> <h3 id="_4-说说你对amd和commonjs的了解。"><a href="#_4-说说你对amd和commonjs的了解。" class="header-anchor">#</a> 4.说说你对<code>AMD</code>和<code>CommonJS</code>的了解。</h3> <hr> <p>它们都是实现模块体系的方式，直到<code>ES2015</code>出现之前，<code>JavaScript</code> 一直没有模块体系。<code>CommonJS</code> 是同步的，而 <code>AMD（Asynchronous Module Definition）</code>从全称中可以明显看出是异步的。<code>CommonJS</code> 的设计是为服务器端开发考虑的，而<code>AMD</code>支持异步加载模块，更适合浏览器。</p> <p>我发现<code>AMD</code>的语法非常冗长，<code>CommonJS</code>更接近其他语言<code>import</code> 声明语句的用法习惯。大多数情况下，我认为<code>AMD</code>没有使用的必要，因为如果把所有 <code>JavaScript</code> 都捆绑进一个文件中，将无法得到异步加载的好处。此外，<code>CommonJS 语法上更接近 Node 编写模块的风格，在前后端都使用 JavaScript</code>开发之间进行切换时，语境的切换开销较小。</p> <p>我很高兴看到<code>ES2015</code> 的模块加载方案同时支持同步和异步，我们终于可以只使用一种方案了。虽然它尚未在浏览器和<code>Node</code>中完全推出，但是我们可以使用代码转换工具进行转换。</p> <h4 id="_5-请解释下面代码为什么不能用作iife-function-foo-需要作出哪些修改才能使其成为iife"><a href="#_5-请解释下面代码为什么不能用作iife-function-foo-需要作出哪些修改才能使其成为iife" class="header-anchor">#</a> 5.请解释下面代码为什么不能用作<code>IIFE：function foo(){ }();</code>，需要作出哪些修改才能使其成为<code>IIFE</code>？</h4> <hr> <p><code>IIFE（Immediately Invoked Function Expressions）</code>代表立即执行函数。 <code>JavaScript</code> 解析器将 <code>function foo(){ }();</code>解析成 <code>function foo(){ }和();</code> 。其中，前者是函数声明；后者（一对括号）是试图调用一个函数，却没有指定名称，因此它会抛出<code>Uncaught SyntaxError: Unexpected token )</code>的错误。</p> <p>修改方法是：再添加一对括号，形式上有两种：<code>(function foo(){ })()</code>和<code>(function foo(){ }())</code>。以上函数不会暴露到全局作用域，如果不需要在函数内部引用自身，可以省略函数的名称。</p> <p>你可能会用到<code>void</code>操作符：<code>void function foo(){ }();</code>。但是，这种做法是有问题的。表达式的值是<code>undefined</code>，所以如果你的<code>IIFE</code> 有返回值，不要用这种做法。例如：</p> <div class="language- extra-class"><pre class="language-text"><code>
+const foo = void function bar() { return 'foo'; }();
+
+console.log(foo); // undefined
+
+</code></pre></div><h3 id="_6-null、undefined和未声明变量之间有什么区别-如何检查判断这些状态值"><a href="#_6-null、undefined和未声明变量之间有什么区别-如何检查判断这些状态值" class="header-anchor">#</a> 6.<code>null</code>、<code>undefined</code>和未声明变量之间有什么区别？如何检查判断这些状态值？</h3> <hr> <p>当你没有提前使用<code>var</code> 、<code>let</code>或<code>const</code>声明变量，就为一个变量赋值时，该变量是未声明变量<code>（undeclared variables）</code>。未声明变量会脱离当前作用域，成为全局作用域下定义的变量。在严格模式下，给未声明的变量赋值，会抛出<code>ReferenceError</code>错误。和使用全局变量一样，使用未声明变量也是非常不好的做法，应当尽可能避免。要检查判断它们，需要将用到它们的代码放在<code>try/catch</code>语句中。</p> <div class="language- extra-class"><pre class="language-text"><code>
+function foo() {
+  x = 1; // 在严格模式下，抛出 ReferenceError 错误
+}
+
+foo();
+console.log(x); // 1
+
+</code></pre></div><p>当一个变量已经声明，但没有赋值时，该变量的值是<code>undefined</code>。如果一个函数的执行结果被赋值给一个变量，但是这个函数却没有返回任何值，那么该变量的值是<code>undefined</code>。要检查它，需要使用严格相等（===）；或者使用<code>typeof</code>，它会返回 <code>'undefined'</code>字符串。请注意，不能使用非严格相等（==）来检查，因为如果变量值为<code>null</code>，使用非严格相等也会返回<code>true</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>
+var foo;
+console.log(foo); // undefined
+console.log(foo === undefined); // true
+console.log(typeof foo === 'undefined'); // true
+
+console.log(foo == null); // true. 错误，不要使用非严格相等！
+
+function bar() {}
+var baz = bar();
+console.log(baz); // undefined
+
+</code></pre></div><p><code>null</code>只能被显式赋值给变量。它表示空值，与被显式赋值 <code>undefined</code> 的意义不同。要检查判断<code>null</code>值，需要使用严格相等运算符。请注意，和前面一样，不能使用非严格相等（==）来检查，因为如果变量值为<code>undefined</code>，使用非严格相等也会返回<code>true</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>
+var foo = null;
+
+console.log(foo === null); // true
+
+console.log(foo == undefined); // true. 错误，不要使用非严格相等！
+
+</code></pre></div><p>作为一种个人习惯，我从不使用未声明变量。如果定义了暂时没有用到的变量，我会在声明后明确地给它们赋值为<code>null</code>。</p> <h3 id="_7-什么是闭包-为什么使用闭包"><a href="#_7-什么是闭包-为什么使用闭包" class="header-anchor">#</a> 7.什么是闭包，为什么使用闭包？</h3> <hr> <p>闭包是函数和声明该函数的词法环境的组合。词法作用域中使用的域，是变量在代码中声明的位置所决定的。闭包是即使被外部函数返回，依然可以访问到外部（封闭）函数作用域的函数。</p> <blockquote><p>为什么使用闭包？<br>
+1.利用闭包实现数据私有化或模拟私有方法,这个方式也称为模块模式。
+<br>
+2.部分参数函数柯里化。</p></blockquote> <h3 id="_8-请说明-foreach循环和-map-循环的主要区别-它们分别在什么情况下使用"><a href="#_8-请说明-foreach循环和-map-循环的主要区别-它们分别在什么情况下使用" class="header-anchor">#</a> 8.请说明<code>.forEach</code>循环和<code>.map()</code>循环的主要区别，它们分别在什么情况下使用？</h3> <hr> <p>为了理解两者的区别，我们看看它们分别是做什么的。</p> <div class="language- extra-class"><pre class="language-text"><code>1.forEach
+
+遍历数组中的元素。
+为每个元素执行回调。
+无返回值。
+
+const a = [1, 2, 3];
+const doubled = a.forEach((num, index) =&gt; {
+  // 执行与 num、index 相关的代码
+});
+
+// doubled = undefined
+
+2.map
+
+遍历数组中的元素
+通过对每个元素调用函数，将每个元素“映射（map）”到一个新元素，从而创建一个新数组。
+
+const a = [1, 2, 3];
+const doubled = a.map(num =&gt; {
+  return num * 2;
+});
+
+// doubled = [2, 4, 6]
+
+</code></pre></div><p><code>.forEach</code>和<code>.map()</code>的主要区别在于<code>.map()</code>返回一个新的数组。如果你想得到一个结果，但不想改变原始数组，用<code>.map()</code>。如果你只需要在数组上做迭代修改，用<code>forEach</code>。</p> <h3 id="_9-匿名函数的典型应用场景是什么"><a href="#_9-匿名函数的典型应用场景是什么" class="header-anchor">#</a> 9.匿名函数的典型应用场景是什么？</h3> <hr> <p>匿名函数可以在<code>IIFE</code>中使用，来封装局部作用域内的代码，以便其声明的变量不会暴露到全局作用域。</p> <div class="language- extra-class"><pre class="language-text"><code>
+(function() {
+  // 一些代码。
+})();
+
+匿名函数可以作为只用一次，不需要在其他地方使用的回调函数。当处理函数在调用它们的程序内部被定义时，代码具有更好地自闭性和可读性，可以省去寻找该处理函数的函数体位置的麻烦。
+
+setTimeout(function() {
+  console.log('Hello world!');
+}, 1000);
+
+匿名函数可以用于函数式编程或 Lodash（类似于回调函数）。
+
+const arr = [1, 2, 3];
+const double = arr.map(function(el) {
+  return el * 2;
+});
+console.log(double); // [2, 4, 6]
+
+</code></pre></div><h3 id="_10-你如何组织自己的代码-使用模块模式-module-pattern-还是经典继承-classical-inheritance"><a href="#_10-你如何组织自己的代码-使用模块模式-module-pattern-还是经典继承-classical-inheritance" class="header-anchor">#</a> 10.你如何组织自己的代码？（使用模块模式（module pattern）还是经典继承（classical inheritance）？）</h3> <hr> <p>我以前使用 <code>Backbone</code> 组织我的模型 <code>（model）</code>，<code>Backbone</code> 鼓励采用面向对象的方法——创建 <code>Backbone</code> 模型，并为其添加方法。</p> <p>模块模式仍然是很好的方式，但是现在我使用基于 <code>React/Redux</code> 的 <code>Flux</code>体系结构，它鼓励使用单向函数编程的方法。我用普通对象 <code>（plain object）</code> 表示我的 <code>app</code> 模型，编写实用纯函数去操作这些对象。使用动作 <code>（actions）</code> 和化简器 <code>（reducers）</code> 来处理状态，就像其他 <code>Redux</code> 应用一样。</p> <p>我尽可能避免使用经典继承。如果非要这么做，我会坚持这些原则。</p> <h3 id="_11-宿主对象-host-objects-和原生对象-native-objects-的区别是什么"><a href="#_11-宿主对象-host-objects-和原生对象-native-objects-的区别是什么" class="header-anchor">#</a> 11.宿主对象 <code>（host objects）</code> 和原生对象 <code>（native objects）</code> 的区别是什么？</h3> <hr> <p>原生对象是由 <code>ECMAScript</code> 规范定义的 <code>JavaScript</code>内置对象，比如<code>String</code>、<code>Math</code>、<code>RegExp</code>、<code>Object</code>、<code>Function</code>等等。</p> <p>宿主对象是由运行时环境（浏览器或 <code>Node</code>）提供，比如 <code>window</code>、<code>XMLHTTPRequest</code> 等等。</p> <h3 id="_12-下列语句有什么区别"><a href="#_12-下列语句有什么区别" class="header-anchor">#</a> 12.下列语句有什么区别：</h3> <div class="language- extra-class"><pre class="language-text"><code>
+function Person(){}
+
+var person = Person()
+
+var person = new Person()
+
+</code></pre></div><hr> <p>这个问题问得很含糊。我猜这是在考察 JavaScript 中的构造函数（constructor）。从技术上讲，function Person(){}只是一个普通的函数声明。使用 PascalCase 方式命名函数作为构造函数，是一个惯例。</p> <p>var person = Person()将Person以普通函数调用，而不是构造函数。如果该函数是用作构造函数的，那么这种调用方式是一种常见错误。通常情况下，构造函数不会返回任何东西，因此，像普通函数一样调用构造函数，只会返回undefined赋给用作实例的变量。</p> <p>var person = new Person()使用new操作符，创建Person对象的实例，该实例继承自Person.prototype。另外一种方式是使用<code>Object.create</code>，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>
+Object.create(Person.prototype)`。
+
+function Person(name) {
+  this.name = name;
+}
+
+var person = Person('John');
+console.log(person); // undefined
+console.log(person.name); // Uncaught TypeError: Cannot read property 'name' of undefined
+
+var person = new Person('John');
+console.log(person); // Person { name: &quot;John&quot; }
+console.log(person.name); // &quot;john&quot;
+
+</code></pre></div><h3 id="_13-call-和-apply有什么区别"><a href="#_13-call-和-apply有什么区别" class="header-anchor">#</a> 13.<code>.call</code> 和 <code>.apply</code>有什么区别？</h3> <hr> <p><code>.call</code>和<code>.apply</code>都用于调用函数，第一个参数将用作函数内 <code>this</code> 的值。然而，<code>.call</code>接受逗号分隔的参数作为后面的参数，而 <code>.apply</code>接受一个参数数组作为后面的参数。一个简单的记忆方法是，从<code>call</code>中的 <code>C</code> 联想到逗号分隔（comma-separated），从<code>apply</code>中的 <code>A</code> 联想到数组（array）。</p> <div class="language- extra-class"><pre class="language-text"><code>
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add.call(null, 1, 2)); // 3
+console.log(add.apply(null, [1, 2])); // 3
+
+</code></pre></div><h3 id="_14-请说明-function-prototype-bind-的用法。"><a href="#_14-请说明-function-prototype-bind-的用法。" class="header-anchor">#</a> 14.请说明 <code>Function.prototype.bind</code> 的用法。</h3> <hr> <p>摘自<code>MDN</code>：</p> <p><code>bind()</code>方法创建一个新的函数, 当被调用时，将其 <code>this</code> 关键字设置为提供的值，在调用新函数时，在任何提供之前提供一个给定的参数序列。</p> <p>根据我的经验，将<code>this</code>的值绑定到想要传递给其他函数的类的方法中是非常有用的。在 <code>React</code> 组件中经常这样做。</p> <h3 id="_15-什么时候会用到document-write"><a href="#_15-什么时候会用到document-write" class="header-anchor">#</a> 15.什么时候会用到<code>document.write()</code>？</h3> <hr> <p><code>document.write()</code>用来将一串文本写入由<code>document.open()</code>打开的文档流中。当页面加载后执行<code>document.write()</code>时，它将调用<code>document.open</code>，会清除整个文档（<code>&lt;head&gt;</code>和<code>&lt;body&gt;</code>会被移除！），并将文档内容替换成给定的字符串参数。因此它通常被认为是危险的并且容易被误用。</p> <p>网上有一些答案，解释了<code>document.write()</code>被用于分析代码中，或者当你想包含只有在启用了 <code>JavaScript</code> 的情况下才能工作的样式。它甚至在 <code>HTML5</code> 样板代码中用于并行加载脚本并保持执行顺序！但是，我怀疑这些使用原因是过时的，现在可以在不使用<code>document.write()</code>的情况下实现。如果我的观点有错，请纠正我。</p> <h3 id="_16-请尽可能详细地解释-ajax。"><a href="#_16-请尽可能详细地解释-ajax。" class="header-anchor">#</a> 16.请尽可能详细地解释 <code>Ajax</code>。</h3> <hr> <p><code>Ajax（asynchronous JavaScript and XML）</code>是使用客户端上的许多 <code>Web</code> 技术，创建异步 <code>Web</code> 应用的一种 <code>Web</code> 开发技术。借助 <code>Ajax</code>，<code>Web</code> 应用可以异步（在后台）向服务器发送数据和从服务器检索数据，而不会干扰现有页面的显示和行为。通过将数据交换层与表示层分离，<code>Ajax</code> 允许网页和扩展 <code>Web</code> 应用程序动态更改内容，而无需重新加载整个页面。实际上，现在通常将 <code>XML</code> 替换为 <code>JSON</code>，因为 <code>JavaScript</code> 对 <code>JSON</code> 有原生支持优势。</p> <p><code>XMLHttpRequest API</code>  经常用于异步通信。此外还有最近流行的<code>fetch API</code>。</p> <h3 id="_17-使用-ajax-的优缺点分别是什么"><a href="#_17-使用-ajax-的优缺点分别是什么" class="header-anchor">#</a> 17.使用 Ajax 的优缺点分别是什么？</h3> <hr> <p>优点</p> <div class="language- extra-class"><pre><code>交互性更好。来自服务器的新内容可以动态更改，无需重新加载整个页面。
+减少与服务器的连接，因为脚本和样式只需要被请求一次。
+状态可以维护在一个页面上。JavaScript 变量和 DOM 状态将得到保持，因为主容器页面未被重新加载。
+基本上包括大部分 SPA 的优点。
+</code></pre></div><p>缺点</p> <div class="language- extra-class"><pre><code>动态网页很难收藏。
+如果 JavaScript 已在浏览器中被禁用，则不起作用。
+有些网络爬虫不执行 JavaScript，也不会看到 JavaScript 加载的内容。
+基本上包括大部分 SPA 的缺点。
+</code></pre></div><h3 id="_18-请说明-jsonp-的工作原理-它为什么不是真正的-ajax"><a href="#_18-请说明-jsonp-的工作原理-它为什么不是真正的-ajax" class="header-anchor">#</a> 18.请说明 <code>JSONP</code> 的工作原理，它为什么不是真正的 <code>Ajax</code>？</h3> <hr> <p><code>JSONP</code>（带填充的 <code>JSON</code>）是一种通常用于绕过 <code>Web</code> 浏览器中的跨域限制的方法，因为 <code>Ajax</code> 不允许跨域请求。</p> <p><code>JSONP</code> 通过<code>&lt;script&gt;</code>标签发送跨域请求，通常使用<code>callback</code>查询参数，例如：https://example.com?callback=printData。 然后服务器将数据包装在一个名为<code>printData</code>的函数中并将其返回给客户端。</p> <div class="language- extra-class"><pre class="language-text"><code>
+&lt;!-- https://mydomain.com --&gt;
+&lt;script&gt;
+function printData(data) {
+  console.log(`My name is ${data.name}!`);
+}
+&lt;/script&gt;
+
+&lt;script src=&quot;https://example.com?callback=printData&quot;&gt;&lt;/script&gt;
+printData({ name: 'Yang Shun' });
+
+</code></pre></div><p>客户端必须在其全局范围内具有<code>printData</code>函数，并且在收到来自跨域的响应时，该函数将由客户端执行。</p> <p><code>JSONP</code> 可能具有一些安全隐患。由于 <code>JSONP</code> 是纯 <code>JavaScript</code> 实现，它可以完成 <code>JavaScript</code> 所能做的一切，因此需要信任 <code>JSONP</code> 数据的提供者。</p> <p>现如今，跨来源资源共享（<code>CORS</code>） 是推荐的主流方式，<code>JSONP</code> 已被视为一种比较 <code>hack</code> 的方式。</p> <h3 id="_19-请解释变量提升。"><a href="#_19-请解释变量提升。" class="header-anchor">#</a> 19.请解释变量提升。</h3> <hr> <p>变量提升（<code>hoisting</code>）是用于解释代码中变量声明行为的术语。使用<code>var</code>关键字声明或初始化的变量，会将声明语句“提升”到当前作用域的顶部。 但是，只有声明才会触发提升，赋值语句（如果有的话）将保持原样。我们用几个例子来解释一下。</p> <div class="language- extra-class"><pre class="language-text"><code>// 用 var 声明得到提升
+console.log(foo); // undefined
+
+var foo = 1;
+
+console.log(foo); // 1
+
+// 用 let/const 声明不会提升
+console.log(bar); // ReferenceError: bar is not defined
+
+let bar = 2;
+
+console.log(bar); // 2
+
+函数声明会使函数体提升，但函数表达式（以声明变量的形式书写）只有变量声明会被提升。
+
+// 函数声明
+console.log(foo); // [Function: foo]
+
+foo(); // 'FOOOOO'
+
+function foo() {
+
+  console.log('FOOOOO');
+  
+}
+console.log(foo); // [Function: foo]
+
+// 函数表达式
+console.log(bar); // undefined
+
+bar(); // Uncaught TypeError: bar is not a function
+
+var bar = function() {
+
+  console.log('BARRRR');
+  
+};
+
+console.log(bar); // [Function: bar]
+
+</code></pre></div><h3 id="_20-请描述事件冒泡。"><a href="#_20-请描述事件冒泡。" class="header-anchor">#</a> 20.请描述事件冒泡。</h3> <hr> <p>当一个事件在 <code>DOM</code> 元素上触发时，如果有事件监听器，它将尝试处理该事件，然后事件冒泡到其父级元素，并发生同样的事情。最后直到事件到达祖先元素。事件冒泡是实现事件委托的原理（<code>event delegation</code>）。</p> <h3 id="_21-attribute-和-property-之间有什么区别"><a href="#_21-attribute-和-property-之间有什么区别" class="header-anchor">#</a> 21.“<code>attribute</code>” 和 “<code>property</code>” 之间有什么区别？</h3> <hr> <p>“<code>Attribute</code>” 是在 <code>HTML</code> 中定义的，而 “<code>property</code>” 是在 <code>DOM</code> 上定义的。为了说明区别，假设我们在 <code>HTML</code> 中有一个文本框：</p> <div class="language- extra-class"><pre class="language-text"><code>
+&lt;input type=&quot;text&quot; value=&quot;Hello&quot;&gt;。
+
+const input = document.querySelector('input');
+console.log(input.getAttribute('value')); // Hello
+console.log(input.value); // Hello
+
+但是在文本框中键入“ World!”后:
+
+console.log(input.getAttribute('value')); // Hello
+console.log(input.value); // Hello World!
+
+</code></pre></div><h3 id="_22-为什么扩展-javascript-内置对象是不好的做法"><a href="#_22-为什么扩展-javascript-内置对象是不好的做法" class="header-anchor">#</a> 22.为什么扩展 <code>JavaScript</code> 内置对象是不好的做法？</h3> <hr> <p>扩展 <code>JavaScript</code> 内置（原生）对象意味着将属性或方法添加到其<code>prototype</code>中。虽然听起来很不错，但事实上这样做很危险。想象一下，你的代码使用了一些库，它们通过添加相同的 <code>contains</code> 方法来扩展<code>Array.prototype</code>，如果这两个方法的行为不相同，那么这些实现将会相互覆盖，你的代码将不能正常运行。</p> <p>扩展内置对象的唯一使用场景是创建 <code>polyfill</code>，本质上为老版本浏览器缺失的方法提供自己的实现，该方法是由 <code>JavaScript</code> 规范定义的。</p> <h3 id="_23-document-中的load事件和domcontentloaded事件之间的区别是什么"><a href="#_23-document-中的load事件和domcontentloaded事件之间的区别是什么" class="header-anchor">#</a> 23.<code>document</code> 中的<code>load</code>事件和<code>DOMContentLoaded</code>事件之间的区别是什么？</h3> <hr> <p>当初始的 <code>HTML</code> 文档被完全加载和解析完成之后，<code>DOMContentLoaded</code>事件被触发，而无需等待样式表、图像和子框架的完成加载。</p> <p><code>window</code>的<code>load</code>事件仅在 <code>DOM</code> 和所有相关资源全部完成加载后才会触发。</p> <h3 id="_24-和-的区别是什么"><a href="#_24-和-的区别是什么" class="header-anchor">#</a> 24.<code>==</code>和<code>===</code>的区别是什么？</h3> <hr> <p><code>==</code>是抽象相等运算符，而<code>===</code>是严格相等运算符。<code>==</code>运算符是在进行必要的类型转换后，再比较。<code>===</code>运算符不会进行类型转换，所以如果两个值不是相同的类型，会直接返回<code>false</code>。使用<code>==</code>时，可能发生一些特别的事情，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>
+1 == '1'; // true
+1 == [1]; // true
+1 == true; // true
+0 == ''; // true
+0 == '0'; // true
+0 == false; // true
+我的建议是从不使用==运算符，除了方便与null或undefined比较时，a == null如果a为null或undefined将返回true。
+
+var a = null;
+console.log(a == null); // true
+console.log(a == undefined); // true
+
+</code></pre></div><h3 id="_25-请解释关于-javascript-的同源策略。"><a href="#_25-请解释关于-javascript-的同源策略。" class="header-anchor">#</a> 25.请解释关于 <code>JavaScript</code> 的同源策略。</h3> <hr> <p>同源策略可防止 <code>JavaScript</code> 发起跨域请求。源被定义为 <code>URI</code>、<code>主机名</code>和<code>端口号</code>的组合。此策略可防止页面上的恶意脚本通过该页面的文档对象模型，访问另一个网页上的敏感数据。</p> <h3 id="_26-请使下面的语句生效"><a href="#_26-请使下面的语句生效" class="header-anchor">#</a> 26.请使下面的语句生效：</h3> <h2 id="duplicate-1-2-3-4-5-1-2-3-4-5-1-2-3-4-5"><a href="#duplicate-1-2-3-4-5-1-2-3-4-5-1-2-3-4-5" class="header-anchor">#</a> <code>duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]</code></h2> <div class="language- extra-class"><pre class="language-text"><code>function duplicate(arr) {
+  return arr.concat(arr);
+}
+
+duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
+
+</code></pre></div><h3 id="_27-请说明三元表达式中-三元-这个词代表什么"><a href="#_27-请说明三元表达式中-三元-这个词代表什么" class="header-anchor">#</a> 27.请说明三元表达式中“<code>三元</code>”这个词代表什么？</h3> <hr> <p>“<code>三元</code>”表示接受三个操作数：<code>判断条件</code>，<code>then表达式</code>和<code>else</code>表达式。三元表达式不是 <code>JavaScript</code> 特有的，我不知道这个问题为什么会出现在这里。</p> <h3 id="_28-什么是-use-strict-使用它有什么优缺点"><a href="#_28-什么是-use-strict-使用它有什么优缺点" class="header-anchor">#</a> 28.什么是&quot;<code>use strict</code>&quot;;？使用它有什么优缺点？</h3> <hr> <p>'<code>use strict</code>' 是用于对整个脚本或单个函数启用严格模式的语句。严格模式是可选择的一个限制 <code>JavaScript</code> 的变体一种方式 。</p> <p>优点：</p> <div class="language- extra-class"><pre><code>无法再意外创建全局变量。
+会使引起静默失败（silently fail，即：不报错也没有任何效果）的赋值操抛出异常。
+试图删除不可删除的属性时会抛出异常（之前这种操作不会产生任何效果）。
+要求函数的参数名唯一。
+全局作用域下，this的值为undefined。
+捕获了一些常见的编码错误，并抛出异常。
+禁用令人困惑或欠佳的功能。
+</code></pre></div><p>缺点：</p> <div class="language- extra-class"><pre><code>缺失许多开发人员已经习惯的功能。
+无法访问function.caller和function.arguments。
+以不同严格模式编写的脚本合并后可能导致问题。
+总的来说，我认为利大于弊，我从来不使用严格模式禁用的功能，因此我推荐使用严格模式。
+</code></pre></div><h3 id="_29-创建一个循环-从-1-迭代到-100-3的倍数时输出-fizz-5的倍数时输出-buzz-同时为3和5的倍数时输出-fizzbuzz-。"><a href="#_29-创建一个循环-从-1-迭代到-100-3的倍数时输出-fizz-5的倍数时输出-buzz-同时为3和5的倍数时输出-fizzbuzz-。" class="header-anchor">#</a> 29.创建一个循环，从 1 迭代到 100，3的倍数时输出 &quot;<code>fizz</code>&quot;，5的倍数时输出 &quot;buzz&quot;，同时为3和5的倍数时输出 &quot;<code>fizzbuzz</code>&quot;。</h3> <hr> <div class="language- extra-class"><pre class="language-text"><code>
+for (let i = 1; i &lt;= 100; i++) {
+  let f = i % 3 == 0,
+    b = i % 5 == 0;
+  console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
+}
+
+</code></pre></div><p>我不建议你在面试时写上面的代码。只要写得清晰即可。关于更多千奇百怪的 FizzBuzz 实现，请查看下面的参考链接。</p> <h3 id="_30-为什么不要使用全局作用域"><a href="#_30-为什么不要使用全局作用域" class="header-anchor">#</a> 30.为什么不要使用全局作用域？</h3> <hr> <p>每个脚本都可以访问全局作用域，如果人人都使用全局命名空间来定义自己的变量，肯定会发生冲突。使用模块模式（IIFE）将变量封装在本地命名空间中。</p> <h3 id="_31-为什么要使用load事件-这个事件有什么缺点吗-你知道一些代替方案吗-为什么使用它们"><a href="#_31-为什么要使用load事件-这个事件有什么缺点吗-你知道一些代替方案吗-为什么使用它们" class="header-anchor">#</a> 31.为什么要使用<code>load</code>事件？这个事件有什么缺点吗？你知道一些代替方案吗，为什么使用它们？</h3> <hr> <p>在文档装载完成后会触发<code>load</code>事件。此时，在文档中的所有对象都在 <code>DOM</code> 中，所有图像、脚本、链接和子框架都完成了加载。</p> <p><code>DOM</code> 事件<code>DOMContentLoaded</code>将在页面的 <code>DOM</code> 构建完成后触发，但不要等待其他资源完成加载。如果在初始化之前不需要装入整个页面，这个事件是使用首选。</p> <h3 id="_32-请解释单页应用是什么-如何使其对-seo-友好。"><a href="#_32-请解释单页应用是什么-如何使其对-seo-友好。" class="header-anchor">#</a> 32.请解释单页应用是什么，如何使其对 SEO 友好。</h3> <hr> <p>现如今，<code>Web</code> 开发人员将他们构建的产品称为 <code>Web</code> 应用，而不是网站。虽然这两个术语之间没有严格的区别，但网络应用往往具有高度的交互性和动态性，允许用户执行操作并接收他们的操作响应。在过去，浏览器从服务器接收 <code>HTML</code> 并渲染。当用户导航到其它 <code>URL</code> 时，需要整页刷新，服务器会为新页面发送新的 <code>HTML</code>。这被称为服务器端渲染。</p> <p>然而，在现代的 <code>SPA</code> 中，客户端渲染取而代之。浏览器从服务器加载初始页面、整个应用程序所需的脚本（框架、库、应用代码）和样式表。当用户导航到其他页面时，不会触发页面刷新。该页面的 <code>URL</code> 通过 <code>HTML5 History API</code> 进行更新。浏览器通过 <code>AJAX</code> 请求向服务器检索新页面所需的数据（通常采用 <code>JSON</code> 格式）。然后，<code>SPA</code> 通过 <code>JavaScript</code> 来动态更新页面，这些 <code>JavaScript</code> 在初始页面加载时已经下载。这种模式类似于原生移动应用的工作方式。</p> <p>好处：</p> <div class="language- extra-class"><pre><code>用户感知响应更快，用户切换页面时，不再看到因页面刷新而导致的白屏。
+对服务器进行的 HTTP 请求减少，因为对于每个页面加载，不必再次下载相同的资源。
+客户端和服务器之间的关注点分离。可以为不同平台（例如手机、聊天机器人、智能手表）建立新的客户端，而无需修改服务器代码。只要 API 没有修改，可以单独修改客户端和服务器上的代码。
+</code></pre></div><p>坏处：</p> <div class="language- extra-class"><pre><code>由于加载了多个页面所需的框架、应用代码和资源，导致初始页面加载时间较长。
+服务器还需要进行额外的工作，需要将所有请求路由配置到单个入口点，然后由客户端接管路由。
+SPA 依赖于 JavaScript 来呈现内容，但并非所有搜索引擎都在抓取过程中执行 JavaScript，他们可能会在你的页面上看到空的内容。这无意中损害了应用的搜索引擎优化（SEO）。然而，当你构建应用时，大多数情况下，搜索引擎优化并不是最重要的因素，因为并非所有内容都需要通过搜索引擎进行索引。为了解决这个问题，可以在服务器端渲染你的应用，或者使用诸如 Prerender 的服务来“在浏览器中呈现你的 javascript，保存静态 HTML，并将其返回给爬虫”。
+</code></pre></div><h3 id="_33-你对-promises-及其-polyfill-的掌握程度如何"><a href="#_33-你对-promises-及其-polyfill-的掌握程度如何" class="header-anchor">#</a> 33.你对 <code>Promises</code> 及其 <code>polyfill</code> 的掌握程度如何？</h3> <hr> <p>掌握它的工作原理。<code>Promise</code>是一个可能在未来某个时间产生结果的对象：操作成功的结果或失败的原因（例如发生网络错误）。 <code>Promise</code> 可能处于以下三种状态之一：<code>fulfilled</code>、<code>rejected</code> 或 <code>pending</code>。 用户可以对<code>Promise</code>添加回调函数来处理操作成功的结果或失败的原因。</p> <p>一些常见的 <code>polyfill</code> 是<code>$.deferred</code>、<code>Q</code> 和 <code>Bluebird</code>，但不是所有的 <code>polyfill</code> 都符合规范。<code>ES2015</code> 支持<code>Promises</code>，现在通常不需要使用 <code>polyfills</code>。</p> <h3 id="_34-promise代替回调函数有什么优缺点"><a href="#_34-promise代替回调函数有什么优缺点" class="header-anchor">#</a> 34.Promise代替回调函数有什么优缺点？</h3> <hr> <div class="language- extra-class"><pre class="language-text"><code>
+优点：
+避免可读性极差的回调地狱。
+使用.then()编写的顺序异步代码，既简单又易读。
+使用Promise.all()编写并行异步代码变得很容易。
+
+缺点：
+轻微地增加了代码的复杂度（这点存在争议）。
+在不支持 ES2015 的旧版浏览器中，需要引入 polyfill 才能使用。
+
+</code></pre></div><h3 id="_35-你使用什么工具和技巧调试-javascript-代码"><a href="#_35-你使用什么工具和技巧调试-javascript-代码" class="header-anchor">#</a> 35.你使用什么工具和技巧调试 JavaScript 代码？</h3> <hr> <div class="language- extra-class"><pre class="language-text"><code>
+React 和 Redux
+React Devtools
+Redux Devtools
+Vue
+Vue Devtools
+JavaScript
+Chrome Devtools
+debugger声明
+使用万金油console.log进行调试
+
+</code></pre></div><h3 id="_36-你使用什么语句遍历对象的属性和数组的元素"><a href="#_36-你使用什么语句遍历对象的属性和数组的元素" class="header-anchor">#</a> 36.你使用什么语句遍历对象的属性和数组的元素？</h3> <hr> <p>对象：</p> <div class="language- extra-class"><pre class="language-text"><code>
+1.for循环：for (var property in obj) { console.log(property); }。但是，这还会遍历到它的继承属性，在使用之前，你需要加入obj.hasOwnProperty(property)检查。
+
+2.Object.keys()：Object.keys(obj).forEach(function (property) { ... })。Object.keys()方法会返回一个由一个给定对象的自身可枚举属性组成的数组。
+
+3.Object.getOwnPropertyNames()：Object.getOwnPropertyNames(obj).forEach(function (property) { ... })。Object.getOwnPropertyNames()方法返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性但不包括 Symbol 值作为名称的属性）组成的数组。
+数组：
+
+4.for loops：for (var i = 0; i &lt; arr.length; i++)。这里的常见错误是var是函数作用域而不是块级作用域，大多数时候你想要迭代变量在块级作用域中。ES2015 引入了具有块级作用域的let，建议使用它。所以就变成了：for (let i = 0; i &lt; arr.length; i++)。
+
+5.forEach：arr.forEach(function (el, index) { ... })。这个语句结构有时会更精简，因为如果你所需要的只是数组元素，你不必使用index。还有every和some方法可以让你提前终止遍历。
+大多数情况下，我更喜欢.forEach方法，但这取决于你想要做什么。for循环有更强的灵活性，比如使用break提前终止循环，或者递增步数大于一。
+
+</code></pre></div><h3 id="_36-请解释可变对象和不可变对象之间的区别。"><a href="#_36-请解释可变对象和不可变对象之间的区别。" class="header-anchor">#</a> 36.请解释可变对象和不可变对象之间的区别。</h3> <hr> <p>什么是 <code>JavaScript</code> 中的不可变对象的例子？
+不变性有什么优点和缺点？
+你如何在自己的代码中实现不变性？
+可变对象 在创建之后是可以被改变的。</p> <p>不可变对象 在创建之后是不可以被改变的。</p> <p>在 <code>JavaScript</code> 中，<code>string</code> 和 <code>number</code> 从设计之初就是不可变(<code>Immutable</code>)。
+不可变 其实是保持一个对象状态不变，这样做的好处是使得开发更加简单，可回溯，测试友好，减少了任何可能的副作用。但是，每当你想添加点东西到一个不可变(<code>Immutable</code>)对象里时，它一定是先拷贝已存在的值到新实例里，然后再给新实例添加内容，最后返回新实例。相比可变对象，这势必会有更多内存、计算量消耗。
+比如：构造一个纯函数</p> <div class="language- extra-class"><pre class="language-text"><code>const student1 = {
+  school: 'Baidu',
+  name: 'HOU Ce',
+  birthdate: '1995-12-15',
+};
+
+const changeStudent = (student, newName, newBday) =&gt; {
+  return {
+    ...student, // 使用解构
+    name: newName, // 覆盖name属性
+    birthdate: newBday, // 覆盖birthdate属性
+  };
+};
+
+const student2 = changeStudent(student1, 'YAN Haijing', '1990-11-10');
+
+// both students will have the name properties
+
+console.log(student1, student2);
+
+// Object {school: &quot;Baidu&quot;, name: &quot;HOU Ce&quot;, birthdate: &quot;1995-12-15&quot;}
+// Object {school: &quot;Baidu&quot;, name: &quot;YAN Haijing&quot;, birthdate: &quot;1990-11-10&quot;}
+
+</code></pre></div><h3 id="_37-请解释同步和异步函数之间的区别。"><a href="#_37-请解释同步和异步函数之间的区别。" class="header-anchor">#</a> 37.请解释同步和异步函数之间的区别。</h3> <hr> <p>同步函数阻塞，而异步函数不阻塞。在同步函数中，语句完成后，下一句才执行。在这种情况下，程序可以按照语句的顺序进行精确评估，如果其中一个语句需要很长时间，程序的执行会停滞很长时间。</p> <p>异步函数通常接受回调作为参数，在调用异步函数后立即继续执行下一行。回调函数仅在异步操作完成且调用堆栈为空时调用。诸如从 <code>Web</code> 服务器加载数据或查询数据库等重负载操作应该异步完成，以便主线程可以继续执行其他操作，而不会出现一直阻塞，直到费时操作完成的情况（在浏览器中，界面会卡住）。</p> <h3 id="_38-什么是事件循环-调用堆栈和任务队列之间有什么区别"><a href="#_38-什么是事件循环-调用堆栈和任务队列之间有什么区别" class="header-anchor">#</a> 38.什么是事件循环？调用堆栈和任务队列之间有什么区别？</h3> <hr> <p>事件循环是一个单线程循环，用于监视调用堆栈并检查是否有工作即将在任务队列中完成。如果调用堆栈为空并且任务队列中有回调函数，则将回调函数出队并推送到调用堆栈中执行。</p> <h3 id="_39-请解释-function-foo-和-var-foo-function-之间-foo-的用法上的区别。"><a href="#_39-请解释-function-foo-和-var-foo-function-之间-foo-的用法上的区别。" class="header-anchor">#</a> 39.请解释 <code>function foo() {}</code>和 <code>var foo = function() {}</code> 之间 <code>foo</code> 的用法上的区别。</h3> <hr> <p>前者是函数声明，后者是函数表达式。关键的区别在于函数声明会使函数体提升（具有与变量相同的提升行为），但函数表达式的函数体不能。有关变量提升的更多解释，请参阅上面关于变量提升的问题。如果你试图在定义函数表达式之前调用它，你会得到一个<code>Uncaught TypeError: XXX is not a function</code>的错误。</p> <div class="language- extra-class"><pre class="language-text"><code>
+函数声明
+
+foo(); // 'FOOOOO'
+function foo() {
+  console.log('FOOOOO');
+}
+函数表达式
+
+foo(); // Uncaught TypeError: foo is not a function
+var foo = function() {
+  console.log('FOOOOO');
+};
+
+</code></pre></div><h3 id="_40-使用let、var和const创建变量有什么区别"><a href="#_40-使用let、var和const创建变量有什么区别" class="header-anchor">#</a> 40.使用<code>let</code>、<code>var</code>和<code>const</code>创建变量有什么区别？</h3> <hr> <p>用<code>var</code>声明的变量的作用域是它当前的执行上下文，它可以是嵌套的函数，也可以是声明在任何函数外的变量。<code>let</code>和<code>const</code>是块级作用域，意味着它们只能在最近的一组花括号（<code>function</code>、<code>if-else</code> 代码块或 <code>for</code> 循环中）中访问。</p> <div class="language- extra-class"><pre class="language-text"><code>
+function foo() {
+  // 所有变量在函数中都可访问
+  var bar = 'bar';
+  let baz = 'baz';
+  const qux = 'qux';
+
+  console.log(bar); // bar
+  console.log(baz); // baz
+  console.log(qux); // qux
+}
+
+console.log(bar); // ReferenceError: bar is not defined
+console.log(baz); // ReferenceError: baz is not defined
+console.log(qux); // ReferenceError: qux is not defined
+
+if (true) {
+  var bar = 'bar';
+  let baz = 'baz';
+  const qux = 'qux';
+}
+
+// 用 var 声明的变量在函数作用域上都可访问
+console.log(bar); // bar
+
+// let 和 const 定义的变量在它们被定义的语句块之外不可访问
+console.log(baz); // ReferenceError: baz is not defined
+console.log(qux); // ReferenceError: qux is not defined
+
+var会使变量提升，这意味着变量可以在声明之前使用。let和const不会使变量提升，提前使用会报错。
+
+console.log(foo); // undefined
+
+var foo = 'foo';
+
+console.log(baz); // ReferenceError: can't access lexical declaration 'baz' before initialization
+
+let baz = 'baz';
+
+console.log(bar); // ReferenceError: can't access lexical declaration 'bar' before initialization
+
+const bar = 'bar';
+
+用var重复声明不会报错，但let和const会。
+
+var foo = 'foo';
+var foo = 'bar';
+console.log(foo); // &quot;bar&quot;
+
+let baz = 'baz';
+let baz = 'qux'; // Uncaught SyntaxError: Identifier 'baz' has already been declared
+
+let和const的区别在于：let允许多次赋值，而const只允许一次。
+
+// 这样不会报错。
+let foo = 'foo';
+foo = 'bar';
+
+// 这样会报错。
+const baz = 'baz';
+baz = 'qux';
+
+</code></pre></div><h3 id="_41-高阶函数-higher-order-的定义是什么"><a href="#_41-高阶函数-higher-order-的定义是什么" class="header-anchor">#</a> 41.高阶函数 <code>（higher-order）</code> 的定义是什么？</h3> <hr> <p>高阶函数是将一个或多个函数作为参数的函数，它用于数据处理，也可能将函数作为返回结果。高阶函数是为了抽象一些重复执行的操作。一个典型的例子是<code>map</code>，它将一个数组和一个函数作为参数。map使用这个函数来转换数组中的每个元素，并返回一个包含转换后元素的新数组。<code>JavaScript</code> 中的其他常见示例是 <code>forEach</code>、<code>filter</code>和<code>reduce</code>。高阶函数不仅需要操作数组的时候会用到，还有许多函数返回新函数的用例。<code>Function.prototype.bind</code>就是一个例子。</p> <div class="language- extra-class"><pre class="language-text"><code>
+Map 示例：
+
+假设我们有一个由名字组成的数组，我们需要将每个字符转换为大写字母。
+
+const names = ['irish', 'daisy', 'anna'];
+不使用高阶函数的方法是这样：
+
+const transformNamesToUppercase = function(names) {
+  const results = [];
+  for (let i = 0; i &lt; names.length; i++) {
+    results.push(names[i].toUpperCase());
+  }
+  return results;
+};
+
+transformNamesToUppercase(names); // ['IRISH', 'DAISY', 'ANNA']
+
+使用.map(transformerFn)使代码更简明
+
+const transformNamesToUppercase = function(names) {
+  return names.map(name =&gt; name.toUpperCase());
+};
+transformNamesToUppercase(names); // ['IRISH', 'DAISY', 'ANNA']
+
+</code></pre></div><h3 id="_42-请给出一个解构-destructuring-对象或数组的例子。"><a href="#_42-请给出一个解构-destructuring-对象或数组的例子。" class="header-anchor">#</a> 42.请给出一个解构 <code>（destructuring）</code> 对象或数组的例子。</h3> <hr> <p>解构是 <code>ES6</code> 中新功能，它提供了一种简洁方便的方法来提取对象或数组的值，并将它们放入不同的变量中。</p> <div class="language- extra-class"><pre class="language-text"><code>
+数组解构
+
+// 变量赋值
+const foo = ['one', 'two', 'three'];
+
+const [one, two, three] = foo;
+console.log(one); // &quot;one&quot;
+console.log(two); // &quot;two&quot;
+console.log(three); // &quot;three&quot;
+// 变量交换
+let a = 1;
+let b = 3;
+
+[a, b] = [b, a];
+console.log(a); // 3
+console.log(b); // 1
+对象解构
+
+// 变量赋值
+const o = { p: 42, q: true };
+const { p, q } = o;
+
+console.log(p); // 42
+console.log(q); // true
+
+</code></pre></div><h3 id="_43-es6-的模板字符串为生成字符串提供了很大的灵活性-你可以举个例子吗"><a href="#_43-es6-的模板字符串为生成字符串提供了很大的灵活性-你可以举个例子吗" class="header-anchor">#</a> 43.<code>ES6</code> 的模板字符串为生成字符串提供了很大的灵活性，你可以举个例子吗？</h3> <hr> <p>模板字面量 <code>（Template literals）</code>  是允许嵌入表达式的字符串字面量。你可以使用多行字符串和字符串插值功能。</p> <p>语法</p> <div class="language- extra-class"><pre class="language-text"><code>
+`string text`
+`string text line 1 string text line 2`
+`string text ${expression} string text`;
+tag`string text ${expression} string text`;
+
+示例
+console.log(`string text line 1 string text line 2`);
+// &quot;string text line 1 string text line 2&quot;
+
+var a = 5;
+var b = 10;
+console.log(`Fifteen is ${a + b} and\nnot ${2 * a + b}.`);
+// &quot;Fifteen is 15 and\nnot 20.&quot;
+
+//show函数采用rest参数的写法如下：
+
+let name = '张三',
+  age = 20,
+  message = show`我来给大家介绍:${name}的年龄是${age}.`;
+
+function show(stringArr, ...values) {
+  let output = '';
+
+  let index = 0;
+
+  for (; index &lt; values.length; index++) {
+    output += stringArr[index] + values[index];
+  }
+
+  output += stringArr[index];
+
+  return output;
+}
+
+message; //&quot;我来给大家介绍:张三的年龄是20.&quot;
+
+</code></pre></div><h3 id="_44-你能举出一个柯里化函数-curry-function-的例子吗-它有哪些好处"><a href="#_44-你能举出一个柯里化函数-curry-function-的例子吗-它有哪些好处" class="header-anchor">#</a> 44.你能举出一个柯里化函数（curry function）的例子吗？它有哪些好处？</h3> <hr> <p>柯里化 <code>（currying）</code> 是一种模式，其中具有多个参数的函数被分解为多个函数，当被串联调用时，将一次一个地累积所有需要的参数。这种技术帮助编写函数式风格的代码，使代码更易读、紧凑。值得注意的是，对于需要被 <code>curry</code>  的函数，它需要从一个函数开始，然后分解成一系列函数，每个函数都需要一个参数。</p> <div class="language- extra-class"><pre class="language-text"><code>
+function curry(fn) {
+  if (fn.length === 0) {
+    return fn;
+  }
+
+  function _curried(depth, args) {
+    return function(newArgument) {
+      if (depth - 1 === 0) {
+        return fn(...args, newArgument);
+      }
+      return _curried(depth - 1, [...args, newArgument]);
+    };
+  }
+
+  return _curried(fn.length, []);
+}
+
+function add(a, b) {
+  return a + b;
+}
+
+var curriedAdd = curry(add);
+var addFive = curriedAdd(5);
+
+var result = [0, 1, 2, 3, 4, 5].map(addFive); // [5, 6, 7, 8, 9, 10]
+
+</code></pre></div><h3 id="_45-使用扩展运算符-spread-的好处是什么-它与使用剩余参数语句-rest-有什么区别"><a href="#_45-使用扩展运算符-spread-的好处是什么-它与使用剩余参数语句-rest-有什么区别" class="header-anchor">#</a> 45.使用扩展运算符（spread）的好处是什么，它与使用剩余参数语句（rest）有什么区别？</h3> <hr> <p>在函数泛型编码时，<code>ES6</code> 的扩展运算符非常有用，因为我们可以轻松创建数组和对象的拷贝，而无需使用 <code>Object.create</code>、<code>slice</code> 或其他函数库。这个语言特性在 <code>Redux</code> 和 <code>rx.js</code> 的项目中经常用到。</p> <div class="language- extra-class"><pre class="language-text"><code>
+function putDookieInAnyArray(arr) {
+  return [...arr, 'dookie'];
+}
+
+const result = putDookieInAnyArray(['I', 'really', &quot;don't&quot;, 'like']); // [&quot;I&quot;, &quot;really&quot;, &quot;don't&quot;, &quot;like&quot;, &quot;dookie&quot;]
+
+const person = {
+  name: 'Todd',
+  age: 29,
+};
+
+const copyOfTodd = { ...person };
+
+</code></pre></div><p><code>ES6</code> 的剩余参数语句提供了一个简写，允许我们将不定数量的参数表示为一个数组。它就像是扩展运算符语法的反面，将数据收集到数组中，而不是解构数组。剩余参数语句在函数参数、数组和对象的解构赋值中有很大作用。</p> <div class="language- extra-class"><pre class="language-text"><code>
+function addFiveToABunchOfNumbers(...numbers) {
+  return numbers.map(x =&gt; x + 5);
+}
+
+const result = addFiveToABunchOfNumbers(4, 5, 6, 7, 8, 9, 10); // [9, 10, 11, 12, 13, 14, 15]
+
+const [a, b, ...rest] = [1, 2, 3, 4]; // a: 1, b: 2, rest: [3, 4]
+
+const { e, f, ...others } = {
+  e: 1,
+  f: 2,
+  g: 3,
+  h: 4,
+}; // e: 1, f: 2, others: { g: 3, h: 4 }
+
+</code></pre></div><h3 id="_46-如何在文件之间共用代码"><a href="#_46-如何在文件之间共用代码" class="header-anchor">#</a> 46.如何在文件之间共用代码？</h3> <hr> <p>这取决于执行 <code>JavaScript</code> 的环境。</p> <p>在客户端（浏览器环境）上，只要变量或函数在全局作用域 <code>（window）</code> 中声明，所有脚本都可以引用它们。或者，通过 <code>RequireJS</code>  采用异步模块定义 <code>（AMD）</code> 以获得更多模块化方法。</p> <p>在服务器 <code>（Node.js）</code> 上，常用的方法是使用 <code>CommonJS</code>。每个文件都被视为一个模块，可以通过将它们附加到<code>module.exports</code>对象来导出变量和函数。</p> <p><code>ES2015</code> 定义了一个模块语法，旨在替换 <code>AMD</code> 和 <code>CommonJS</code>。 这最终将在浏览器和 <code>Node</code> 环境中得到支持。</p> <h3 id="_47-什么情况下会用到静态类成员"><a href="#_47-什么情况下会用到静态类成员" class="header-anchor">#</a> 47.什么情况下会用到静态类成员？</h3> <hr> <p>静态类成员（属性或方法）不绑定到某个类的特定实例，不管哪个实例引用它，都具有相同的值。静态属性通常是配置变量，而静态方法通常是纯粹的实用函数，不依赖于实例的状态。</p> <blockquote><p>文中如有错误，欢迎在评论区指正，如果这篇文章帮助到了你，欢迎点赞👍和关注，😀。</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/interview/html.html" class="prev">
+        html部分
+      </a></span> <span class="next"><a href="/interview/面试.html">
+        面经
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.bf15a726.js" defer></script><script src="/assets/js/2.9914e370.js" defer></script><script src="/assets/js/31.d7f7e3f3.js" defer></script>
+  </body>
+</html>

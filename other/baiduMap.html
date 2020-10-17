@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>百度地图 | 前端进阶之路</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="李建业的个人网站">
+    <link rel="preload" href="/assets/css/0.styles.ccac5a78.css" as="style"><link rel="preload" href="/assets/js/app.bf15a726.js" as="script"><link rel="preload" href="/assets/js/2.9914e370.js" as="script"><link rel="preload" href="/assets/js/220.060a53f4.js" as="script"><link rel="prefetch" href="/assets/js/10.3e3a10fc.js"><link rel="prefetch" href="/assets/js/100.c070838a.js"><link rel="prefetch" href="/assets/js/101.630f88a2.js"><link rel="prefetch" href="/assets/js/102.de907b7b.js"><link rel="prefetch" href="/assets/js/103.aecf6a67.js"><link rel="prefetch" href="/assets/js/104.b43d7e63.js"><link rel="prefetch" href="/assets/js/105.9ec17f1e.js"><link rel="prefetch" href="/assets/js/106.afa2e80e.js"><link rel="prefetch" href="/assets/js/107.bbf08f03.js"><link rel="prefetch" href="/assets/js/108.d38ce95b.js"><link rel="prefetch" href="/assets/js/109.a243c2de.js"><link rel="prefetch" href="/assets/js/11.119a2a91.js"><link rel="prefetch" href="/assets/js/110.af584200.js"><link rel="prefetch" href="/assets/js/111.ff3df340.js"><link rel="prefetch" href="/assets/js/112.f53353ae.js"><link rel="prefetch" href="/assets/js/113.8a8a597b.js"><link rel="prefetch" href="/assets/js/114.e0e3dcf1.js"><link rel="prefetch" href="/assets/js/115.3754ef74.js"><link rel="prefetch" href="/assets/js/116.2cf4740f.js"><link rel="prefetch" href="/assets/js/117.381bda49.js"><link rel="prefetch" href="/assets/js/118.f005ef30.js"><link rel="prefetch" href="/assets/js/119.918050de.js"><link rel="prefetch" href="/assets/js/12.b26bcbad.js"><link rel="prefetch" href="/assets/js/120.382b41e0.js"><link rel="prefetch" href="/assets/js/121.5f01d5eb.js"><link rel="prefetch" href="/assets/js/122.b7c8c1b3.js"><link rel="prefetch" href="/assets/js/123.3ce388b5.js"><link rel="prefetch" href="/assets/js/124.eb8ff82c.js"><link rel="prefetch" href="/assets/js/125.d0eadf0e.js"><link rel="prefetch" href="/assets/js/126.afeba2c2.js"><link rel="prefetch" href="/assets/js/127.6045d80e.js"><link rel="prefetch" href="/assets/js/128.1402e006.js"><link rel="prefetch" href="/assets/js/129.c557ba45.js"><link rel="prefetch" href="/assets/js/13.59e5b700.js"><link rel="prefetch" href="/assets/js/130.294d6092.js"><link rel="prefetch" href="/assets/js/131.35a85b89.js"><link rel="prefetch" href="/assets/js/132.aa21cc50.js"><link rel="prefetch" href="/assets/js/133.08de30f9.js"><link rel="prefetch" href="/assets/js/134.3c431fd0.js"><link rel="prefetch" href="/assets/js/135.bdb92649.js"><link rel="prefetch" href="/assets/js/136.fd76210b.js"><link rel="prefetch" href="/assets/js/137.ac5e5fad.js"><link rel="prefetch" href="/assets/js/138.d3166269.js"><link rel="prefetch" href="/assets/js/139.ff8bf781.js"><link rel="prefetch" href="/assets/js/14.648c9c56.js"><link rel="prefetch" href="/assets/js/140.8f61f115.js"><link rel="prefetch" href="/assets/js/141.d5c26b3c.js"><link rel="prefetch" href="/assets/js/142.8497c0f9.js"><link rel="prefetch" href="/assets/js/143.e25cf2f7.js"><link rel="prefetch" href="/assets/js/144.af888231.js"><link rel="prefetch" href="/assets/js/145.4dc530a9.js"><link rel="prefetch" href="/assets/js/146.6fe04948.js"><link rel="prefetch" href="/assets/js/147.5be925ff.js"><link rel="prefetch" href="/assets/js/148.2e8f71e4.js"><link rel="prefetch" href="/assets/js/149.f11b1b7c.js"><link rel="prefetch" href="/assets/js/15.41a8af46.js"><link rel="prefetch" href="/assets/js/150.74e1a167.js"><link rel="prefetch" href="/assets/js/151.c740ad7c.js"><link rel="prefetch" href="/assets/js/152.65faae8d.js"><link rel="prefetch" href="/assets/js/153.eac2b5e6.js"><link rel="prefetch" href="/assets/js/154.f4ca727d.js"><link rel="prefetch" href="/assets/js/155.911f2adb.js"><link rel="prefetch" href="/assets/js/156.237971a3.js"><link rel="prefetch" href="/assets/js/157.6c6d3a2b.js"><link rel="prefetch" href="/assets/js/158.a6f45072.js"><link rel="prefetch" href="/assets/js/159.7fb85e96.js"><link rel="prefetch" href="/assets/js/16.6006d673.js"><link rel="prefetch" href="/assets/js/160.23bbf76c.js"><link rel="prefetch" href="/assets/js/161.1f84e360.js"><link rel="prefetch" href="/assets/js/162.7672e71f.js"><link rel="prefetch" href="/assets/js/163.807c8cfe.js"><link rel="prefetch" href="/assets/js/164.fd3485d2.js"><link rel="prefetch" href="/assets/js/165.5de68ab2.js"><link rel="prefetch" href="/assets/js/166.65608c6d.js"><link rel="prefetch" href="/assets/js/167.12160df8.js"><link rel="prefetch" href="/assets/js/168.4871f71c.js"><link rel="prefetch" href="/assets/js/169.c9fa0782.js"><link rel="prefetch" href="/assets/js/17.8db9c959.js"><link rel="prefetch" href="/assets/js/170.8424a255.js"><link rel="prefetch" href="/assets/js/171.83b159bf.js"><link rel="prefetch" href="/assets/js/172.6ecb4179.js"><link rel="prefetch" href="/assets/js/173.4c3bbec2.js"><link rel="prefetch" href="/assets/js/174.8d229413.js"><link rel="prefetch" href="/assets/js/175.2a22db32.js"><link rel="prefetch" href="/assets/js/176.ed1921b9.js"><link rel="prefetch" href="/assets/js/177.743221b4.js"><link rel="prefetch" href="/assets/js/178.13da533c.js"><link rel="prefetch" href="/assets/js/179.b3b516d6.js"><link rel="prefetch" href="/assets/js/18.bca0632c.js"><link rel="prefetch" href="/assets/js/180.bef8dbf4.js"><link rel="prefetch" href="/assets/js/181.af747cb1.js"><link rel="prefetch" href="/assets/js/182.11d95f03.js"><link rel="prefetch" href="/assets/js/183.a4ad2f04.js"><link rel="prefetch" href="/assets/js/184.ccfcfdfd.js"><link rel="prefetch" href="/assets/js/185.94c5ba7f.js"><link rel="prefetch" href="/assets/js/186.5bb64400.js"><link rel="prefetch" href="/assets/js/187.50f8994e.js"><link rel="prefetch" href="/assets/js/188.56e7c639.js"><link rel="prefetch" href="/assets/js/189.024d459e.js"><link rel="prefetch" href="/assets/js/19.bf8484b2.js"><link rel="prefetch" href="/assets/js/190.7c32ce22.js"><link rel="prefetch" href="/assets/js/191.b270044d.js"><link rel="prefetch" href="/assets/js/192.010a7157.js"><link rel="prefetch" href="/assets/js/193.17c9019a.js"><link rel="prefetch" href="/assets/js/194.81dcffa1.js"><link rel="prefetch" href="/assets/js/195.0fe3aa11.js"><link rel="prefetch" href="/assets/js/196.03b7cfb4.js"><link rel="prefetch" href="/assets/js/197.e29c511b.js"><link rel="prefetch" href="/assets/js/198.195612c8.js"><link rel="prefetch" href="/assets/js/199.dadda350.js"><link rel="prefetch" href="/assets/js/20.8d9367c6.js"><link rel="prefetch" href="/assets/js/200.aa0f802e.js"><link rel="prefetch" href="/assets/js/201.d531ad43.js"><link rel="prefetch" href="/assets/js/202.3971536c.js"><link rel="prefetch" href="/assets/js/203.acdb4369.js"><link rel="prefetch" href="/assets/js/204.b7436231.js"><link rel="prefetch" href="/assets/js/205.77c06c8c.js"><link rel="prefetch" href="/assets/js/206.ad1867f9.js"><link rel="prefetch" href="/assets/js/207.f096e0a8.js"><link rel="prefetch" href="/assets/js/208.ecd7a6a2.js"><link rel="prefetch" href="/assets/js/209.211ae34c.js"><link rel="prefetch" href="/assets/js/21.917c196b.js"><link rel="prefetch" href="/assets/js/210.bd411373.js"><link rel="prefetch" href="/assets/js/211.b8568fe3.js"><link rel="prefetch" href="/assets/js/212.e1508d95.js"><link rel="prefetch" href="/assets/js/213.4e138bef.js"><link rel="prefetch" href="/assets/js/214.8ae8c08a.js"><link rel="prefetch" href="/assets/js/215.32ceb492.js"><link rel="prefetch" href="/assets/js/216.bc71ab6b.js"><link rel="prefetch" href="/assets/js/217.2f4e25e3.js"><link rel="prefetch" href="/assets/js/218.76c9d34f.js"><link rel="prefetch" href="/assets/js/219.72b36168.js"><link rel="prefetch" href="/assets/js/22.652c5e61.js"><link rel="prefetch" href="/assets/js/221.27bf7742.js"><link rel="prefetch" href="/assets/js/222.cd001ecb.js"><link rel="prefetch" href="/assets/js/223.d2c57344.js"><link rel="prefetch" href="/assets/js/224.e62fcf41.js"><link rel="prefetch" href="/assets/js/225.4db551b3.js"><link rel="prefetch" href="/assets/js/226.a68cf88b.js"><link rel="prefetch" href="/assets/js/227.e796e298.js"><link rel="prefetch" href="/assets/js/228.b3d4fd56.js"><link rel="prefetch" href="/assets/js/229.4556a008.js"><link rel="prefetch" href="/assets/js/23.bf415662.js"><link rel="prefetch" href="/assets/js/230.8ba9913d.js"><link rel="prefetch" href="/assets/js/231.f2127375.js"><link rel="prefetch" href="/assets/js/232.012fa50e.js"><link rel="prefetch" href="/assets/js/233.df438721.js"><link rel="prefetch" href="/assets/js/234.18f5e52a.js"><link rel="prefetch" href="/assets/js/235.3864aa11.js"><link rel="prefetch" href="/assets/js/236.7db36635.js"><link rel="prefetch" href="/assets/js/237.009e87ce.js"><link rel="prefetch" href="/assets/js/238.f3eaaf8c.js"><link rel="prefetch" href="/assets/js/239.73a9e13b.js"><link rel="prefetch" href="/assets/js/24.f8d388e7.js"><link rel="prefetch" href="/assets/js/240.9d94866f.js"><link rel="prefetch" href="/assets/js/241.1ed8ad95.js"><link rel="prefetch" href="/assets/js/242.7cf7cbde.js"><link rel="prefetch" href="/assets/js/243.25c6dc7a.js"><link rel="prefetch" href="/assets/js/244.8651162d.js"><link rel="prefetch" href="/assets/js/245.ad93af46.js"><link rel="prefetch" href="/assets/js/246.640d71cb.js"><link rel="prefetch" href="/assets/js/247.a1ff4c4b.js"><link rel="prefetch" href="/assets/js/248.b0dcebeb.js"><link rel="prefetch" href="/assets/js/249.ddb0ec50.js"><link rel="prefetch" href="/assets/js/25.6b759b40.js"><link rel="prefetch" href="/assets/js/250.bc2a2c04.js"><link rel="prefetch" href="/assets/js/251.48724cf7.js"><link rel="prefetch" href="/assets/js/252.ff0ae3a7.js"><link rel="prefetch" href="/assets/js/26.3955defe.js"><link rel="prefetch" href="/assets/js/27.fff938af.js"><link rel="prefetch" href="/assets/js/28.05d77c71.js"><link rel="prefetch" href="/assets/js/29.0486d398.js"><link rel="prefetch" href="/assets/js/3.b41e8f36.js"><link rel="prefetch" href="/assets/js/30.2d668802.js"><link rel="prefetch" href="/assets/js/31.d7f7e3f3.js"><link rel="prefetch" href="/assets/js/32.f1544949.js"><link rel="prefetch" href="/assets/js/33.19cceffe.js"><link rel="prefetch" href="/assets/js/34.13f8b2d4.js"><link rel="prefetch" href="/assets/js/35.5cd2160b.js"><link rel="prefetch" href="/assets/js/36.b1ec503a.js"><link rel="prefetch" href="/assets/js/37.a7bc0a92.js"><link rel="prefetch" href="/assets/js/38.b0f58b0d.js"><link rel="prefetch" href="/assets/js/39.ac2562d1.js"><link rel="prefetch" href="/assets/js/4.5ed19beb.js"><link rel="prefetch" href="/assets/js/40.70a8a89e.js"><link rel="prefetch" href="/assets/js/41.df5add88.js"><link rel="prefetch" href="/assets/js/42.1df72958.js"><link rel="prefetch" href="/assets/js/43.2c44e64f.js"><link rel="prefetch" href="/assets/js/44.c99fca0b.js"><link rel="prefetch" href="/assets/js/45.c71aca2b.js"><link rel="prefetch" href="/assets/js/46.db22f4e4.js"><link rel="prefetch" href="/assets/js/47.0d4edc77.js"><link rel="prefetch" href="/assets/js/48.1a3654cd.js"><link rel="prefetch" href="/assets/js/49.d61e9e4e.js"><link rel="prefetch" href="/assets/js/5.aeb0e865.js"><link rel="prefetch" href="/assets/js/50.10ebcce1.js"><link rel="prefetch" href="/assets/js/51.ded02449.js"><link rel="prefetch" href="/assets/js/52.fb61bbf8.js"><link rel="prefetch" href="/assets/js/53.795df375.js"><link rel="prefetch" href="/assets/js/54.8c76b5cb.js"><link rel="prefetch" href="/assets/js/55.cb9f3438.js"><link rel="prefetch" href="/assets/js/56.84e1cca5.js"><link rel="prefetch" href="/assets/js/57.8104aa3a.js"><link rel="prefetch" href="/assets/js/58.94e6a6a2.js"><link rel="prefetch" href="/assets/js/59.1a9c6165.js"><link rel="prefetch" href="/assets/js/6.2e68958b.js"><link rel="prefetch" href="/assets/js/60.2e690a2b.js"><link rel="prefetch" href="/assets/js/61.f43750f3.js"><link rel="prefetch" href="/assets/js/62.f2e9bbf0.js"><link rel="prefetch" href="/assets/js/63.b892bcbe.js"><link rel="prefetch" href="/assets/js/64.76762f3d.js"><link rel="prefetch" href="/assets/js/65.c2b2d6ae.js"><link rel="prefetch" href="/assets/js/66.1c6088e8.js"><link rel="prefetch" href="/assets/js/67.23c3a64a.js"><link rel="prefetch" href="/assets/js/68.70fd9b40.js"><link rel="prefetch" href="/assets/js/69.227127da.js"><link rel="prefetch" href="/assets/js/7.e3114788.js"><link rel="prefetch" href="/assets/js/70.3a7a4c5f.js"><link rel="prefetch" href="/assets/js/71.75d1df6c.js"><link rel="prefetch" href="/assets/js/72.83a6e0cb.js"><link rel="prefetch" href="/assets/js/73.79e93033.js"><link rel="prefetch" href="/assets/js/74.1d911f55.js"><link rel="prefetch" href="/assets/js/75.e5621c86.js"><link rel="prefetch" href="/assets/js/76.1ebc945d.js"><link rel="prefetch" href="/assets/js/77.43515b31.js"><link rel="prefetch" href="/assets/js/78.285ba68b.js"><link rel="prefetch" href="/assets/js/79.0a8f75dc.js"><link rel="prefetch" href="/assets/js/8.cabcbc6f.js"><link rel="prefetch" href="/assets/js/80.17b625cc.js"><link rel="prefetch" href="/assets/js/81.f8a544fe.js"><link rel="prefetch" href="/assets/js/82.6559988a.js"><link rel="prefetch" href="/assets/js/83.78a81947.js"><link rel="prefetch" href="/assets/js/84.3c5c3bd3.js"><link rel="prefetch" href="/assets/js/85.92431359.js"><link rel="prefetch" href="/assets/js/86.a99c559f.js"><link rel="prefetch" href="/assets/js/87.f57f7818.js"><link rel="prefetch" href="/assets/js/88.29563aba.js"><link rel="prefetch" href="/assets/js/89.e207ae6f.js"><link rel="prefetch" href="/assets/js/9.fc39f9e7.js"><link rel="prefetch" href="/assets/js/90.6cacb42e.js"><link rel="prefetch" href="/assets/js/91.932fd0a6.js"><link rel="prefetch" href="/assets/js/92.0abfdb13.js"><link rel="prefetch" href="/assets/js/93.1debaef7.js"><link rel="prefetch" href="/assets/js/94.44407046.js"><link rel="prefetch" href="/assets/js/95.90739ee8.js"><link rel="prefetch" href="/assets/js/96.141e9e7a.js"><link rel="prefetch" href="/assets/js/97.aec85037.js"><link rel="prefetch" href="/assets/js/98.d00f2e8f.js"><link rel="prefetch" href="/assets/js/99.d6387051.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccac5a78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端进阶之路</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://lijanye.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://lijanye.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS手写</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTTP</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>LeetCode</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>二叉树</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>链表</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>其他</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/other/babel.html" class="sidebar-link">babel</a></li><li><a href="/other/baiduMap.html" aria-current="page" class="active sidebar-link">百度地图</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/other/echarts.html" class="sidebar-link">Echarts</a></li><li><a href="/other/styled-components.html" class="sidebar-link">styled-components</a></li><li><a href="/other/查漏补缺.html" class="sidebar-link">查漏补缺</a></li><li><a href="/other/虚拟列表demo.html" class="sidebar-link">虚拟列表DEMO</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Next</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="百度地图"><a href="#百度地图" class="header-anchor">#</a> 百度地图</h3> <h3 id="导读"><a href="#导读" class="header-anchor">#</a> 导读</h3> <hr> <p>百度地图的强大功能我在这里就不一一赘述了，本篇文章也只是对<code>百度地图JavaScript API</code>进行一个介绍，希望可以对小伙伴有所帮助，这里是本篇文章<a href="https://github.com/Hdoove/BaiduMap" target="_blank" rel="noopener noreferrer">git地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。<br><br> 首先借用官网的一句话介绍一下<code>百度地图JavaScript API</code>:</p> <blockquote><p><code>百度地图JavaScript API</code>是一套由<code>JavaScript</code>语言编写的应用程序接口，可帮助您在网站中构建功能丰富、交互性强的地图应用，支持<code>PC</code>端和移动端基于浏览器的地图应用开发，且支持<code>HTML5</code>特性的地图开发。</p></blockquote> <div class="language-! extra-class"><pre class="language-text"><code>!!!此篇文章是仿照官方提供的文档中比较基础、适合入门的例子进行编写，觉得介意的小伙伴就可以选择退出了哈，不过还是可以稍微瞄一眼，哈哈，我们开始~~
+</code></pre></div><br> <h3 id="战前准备"><a href="#战前准备" class="header-anchor">#</a> 战前准备</h3> <hr> <h4 id="_1-注册"><a href="#_1-注册" class="header-anchor">#</a> 1. 注册</h4> <p>首先在使用百度地图之前，小伙伴们必须先要拥有一个自己的百度账号，申请注册成为百度开发者，然后创建一个应用，就可以获取到一个唯一的<code>服务秘钥(AK)</code>，然后就可以使用相关服务了。</p> <blockquote><p>具体流程如下：</p></blockquote> <p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cefe5fab785c69?w=1956&amp;h=336&amp;f=png&amp;s=47873" alt=""></p> <h4 id="_2-创建应用"><a href="#_2-创建应用" class="header-anchor">#</a> 2.创建应用</h4> <p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cefe7f03829510?w=802&amp;h=829&amp;f=png&amp;s=107806" alt=""></p> <h4 id="_3-获取我们的ak"><a href="#_3-获取我们的ak" class="header-anchor">#</a> 3. 获取我们的AK</h4> <p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cefe8367390247?w=840&amp;h=33&amp;f=png&amp;s=8771" alt=""></p> <blockquote><p>经过以上3步，我想大家已经有了属于自己的一个<code>AK</code>了吧，so， 接下来的我将会以<code>React</code>+<code>webpack</code>为技术栈进行编写，万变不离其宗，<code>Vue</code>的小伙伴或者使用其他技术栈的小伙伴都可以借鉴一下，我们开始。</p></blockquote> <br> <h3 id="hello-百度地图"><a href="#hello-百度地图" class="header-anchor">#</a> Hello 百度地图</h3> <hr> <h4 id="_1-crate-react-app"><a href="#_1-crate-react-app" class="header-anchor">#</a> 1.crate-react-app</h4> <blockquote><p><code>react</code> 官方也是提供了一个很方便的脚手架工具，这里就不一一阐述了，毕竟本篇文章的关注点不是这里，以后有机会的话可能会单独写一篇，小伙伴们见谅~~</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>
+create-react-app baiduMap
+
+cd baiduMap
+
+npm start
+
+</code></pre></div><h4 id="_2-配置webpack"><a href="#_2-配置webpack" class="header-anchor">#</a> 2.配置webpack</h4> <blockquote><p>这里配置<code>webpack</code>的主要原因就是解决<code>BMap</code>报错的问题<code>BMap is not defined</code>,在这里推荐使用<code>webpack</code>最为主要的解决手段，就是通过<code>webpack</code>输出对象中的<code>externals</code>属性实现<code>require</code>的访问。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>
+externals:{
+    'BMap':'BMap'
+}
+
+</code></pre></div><blockquote><p>这里<code>webpack</code>的<code>externals</code>的功能我概括为两点：<br>
+1.写入<code>externals</code>中的依赖是不会被打包进最后的<code>bundle</code>里面的。<br>
+2.虽然它不会被打包，但在程序运行的时候你仍然能通过模块化的方式去引入这些依赖，
+如<code>commonJS</code>,<code>AMD</code>,<code>ES6</code>的<code>import</code>等</p></blockquote> <br> <h4 id="_3-引入百度地图api文件"><a href="#_3-引入百度地图api文件" class="header-anchor">#</a> 3.引入百度地图api文件</h4> <blockquote><p>在<code>webpack</code>的<code>HTML</code>模板中引入</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://api.map.baidu.com/api?v=3.0&amp;ak=您的密钥&quot;&gt;&lt;/script&gt;
+
+</code></pre></div><br> <h4 id="_4-创建地图容器元素"><a href="#_4-创建地图容器元素" class="header-anchor">#</a> 4.创建地图容器元素</h4> <div class="language- extra-class"><pre class="language-text"><code>
+&lt;div id = &quot;mapContent&quot; style={{ height: '100vh', width: '100%' }}&gt;&lt;/div&gt;
+
+</code></pre></div><br> <h4 id="_5-创建地图实例"><a href="#_5-创建地图实例" class="header-anchor">#</a> 5.创建地图实例</h4> <div class="language- extra-class"><pre class="language-text"><code>
+//引入地图依赖
+import BMap from 'BMap';
+...
+
+componentDidMount() {
+    const map = new BMap.Map(&quot;mapContent&quot;);
+    // 创建地图实例  
+    const point = new BMap.Point(116.404, 39.915);
+    // 创建点坐标  
+    map.centerAndZoom(point, 15);
+}
+
+</code></pre></div><h4 id="_6-实现"><a href="#_6-实现" class="header-anchor">#</a> 6.实现</h4> <blockquote><p>经过以上几步，我们就可以出来一个很简陋的地图出来了，😄，确实是简陋，给大家先看一下效果</p></blockquote> <p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf0002ddf81c90?w=1425&amp;h=687&amp;f=gif&amp;s=4567381" alt=""></p> <blockquote><p>好了，看到这里，小伙伴们是不是对地图充满兴趣了呢，来我们接着向下看，后面有更多有意思的东西在等着你哦 😜</p></blockquote> <br> <h3 id="百度地图-冲呀"><a href="#百度地图-冲呀" class="header-anchor">#</a> 百度地图 冲呀！</h3> <hr> <blockquote><p>此部分是百度地图的主要功能部分，在这里给小伙伴们具体展示一下，后续可以根据自己的需求进行修改。</p></blockquote> <br> <h4 id="_1-设置中心点"><a href="#_1-设置中心点" class="header-anchor">#</a> 1.设置中心点</h4> <div class="language- extra-class"><pre class="language-text"><code>中心点的设置方法主要有两种
+
+1. 根据经纬度。
+
+// 创建点坐标 
+const point = new BMap.Point(116.404, 39.915);
+map.centerAndZoom(point, 12);
+
+2.根据城市名。
+
+// 直接使用城市名作为中间点  
+map.centerAndZoom('天津', 12);
+
+</code></pre></div><br> <h4 id="_2-设置zoom值"><a href="#_2-设置zoom值" class="header-anchor">#</a> 2.设置Zoom值</h4> <div class="language- extra-class"><pre class="language-text"><code>
+// Zoom值其实就是地图可放大，可缩小的一个范围，我们可以设置地图的最大最小缩放级别
+
+var map = new BMap.Map(&quot;mapContent&quot;,{minZoom:4,maxZoom:8});
+
+map.centerAndZoom('天津', 12); // 这里的12指的是默认缩放级别
+
+</code></pre></div><br> <h4 id="_3-设置可缩放地图"><a href="#_3-设置可缩放地图" class="header-anchor">#</a> 3.设置可缩放地图</h4> <div class="language- extra-class"><pre class="language-text"><code>
+// 默认的地图是只可以鼠标拖动的，鼠标滚轮不会修改Zoom值
+
+map.enableScrollWheelZoom(true);
+
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf026d09544c75?w=1417&amp;h=678&amp;f=gif&amp;s=1866340" alt=""></p> <br> <h4 id="_4-添加地图控件"><a href="#_4-添加地图控件" class="header-anchor">#</a> 4.添加地图控件</h4> <div class="language- extra-class"><pre class="language-text"><code>
+// 混合图
+var mapType = new BMap.MapTypeControl(
+  {
+    mapTypes: [BMAP_NORMAL_MAP,BMAP_HYBRID_MAP],
+    anchor: BMAP_ANCHOR_TOP_LEFT
+  }
+);
+
+// 鹰眼图
+var overView = new BMap.OverviewMapControl();
+
+// 比例尺
+var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});
+
+// 添加默认缩放平移控件
+  var top_left_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL});
+
+map.addControl(mapType); 
+map.addControl(overView);
+map.addControl(top_left_control);  
+map.addControl(top_left_navigation); 
+
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf04ac605d4da8?w=1435&amp;h=692&amp;f=gif&amp;s=1098541" alt=""></p> <br> <h4 id="_5-添加标注点"><a href="#_5-添加标注点" class="header-anchor">#</a> 5.添加标注点</h4> <blockquote><p>这是这里用到的一些数据</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>
+const data = [
+  {
+    lon: 116.304854,
+    lat:39.921988,
+    address: '地点1',
+    people: '周元',
+    doThing: '暴揍赵牧神'
+  },
+  {
+    lon: 116.417824,
+    lat:39.921910,
+    address: '地点2',
+    people: '夭夭',
+    doThing: '沉睡冰棺'
+  },
+  {
+    lon: 116.517777,
+    lat:39.821999,
+    address: '地点3',
+    people: '吞吞',
+    doThing: '死亡历练'
+  }
+];
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>
+for(var i=0;i&lt;data.length;i++){
+
+  var marker = new BMap.Marker(new BMap.Point(data[i].lon,data[i].lat));  // 创建标注
+  
+  var content = [data[i].address,data[i].people,data[i].doThing] ;
+  
+  map.addOverlay(marker);// 将标注添加到地图上
+
+}
+
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf061d59d4aa53?w=594&amp;h=468&amp;f=png&amp;s=231037" alt=""></p> <h4 id="_6-添加事件"><a href="#_6-添加事件" class="header-anchor">#</a> 6.添加事件</h4> <blockquote><p>往往在实际项目中经常会遇到，点击标注点弹出该点的一些信息，我们这里尝试一下</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>
+for(var i=0;i&lt;data.length;i++){
+
+  var marker = new BMap.Marker(new BMap.Point(data[i].lon,data[i].lat));  // 创建标注
+  
+  var content = [data[i].address,data[i].people,data[i].doThing] ;
+  
+  map.addOverlay(marker);// 将标注添加到地图中
+  
+  this.addClickHandler(content,marker, map); // 添加一个点击事件 将我们的map传递过去
+  
+}
+
+//addClickHandler 方法
+addClickHandler = (content,marker, map) =&gt; {
+
+    const that = this;
+    
+    marker.addEventListener(&quot;click&quot;,function(e){
+    	that.openInfo(content,e, map)}
+    );
+    
+}
+
+// openInfo 方法
+openInfo = (content,e, map) =&gt; {
+    // 定义窗口信息
+    const opts = {
+      width : 250,     // 信息窗口宽度
+      height: 120,     // 信息窗口高度
+      title : &quot;信息窗口&quot; , // 信息窗口标题
+      enableMessage:true//设置允许信息窗发送短息
+    };
+    var p = e.target;
+    var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+    var infoWindow = new BMap.InfoWindow(
+              `
+                &lt;div&gt;
+                  地点：${content[0]} &lt;br /&gt;
+                  人物：${content[1]} &lt;br /&gt;
+                  事件：${content[2]} &lt;br /&gt;
+                &lt;/div&gt;
+              `  
+            ,opts);  // 创建信息窗口对象
+    
+    map.openInfoWindow(infoWindow,point); //开启信息窗口
+}
+
+</code></pre></div><blockquote><p>可以实现一下效果，小伙伴们可以自己自由发挥样式之类哦 😯</p></blockquote> <p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf06cb26e0284f?w=1435&amp;h=692&amp;f=gif&amp;s=333786" alt=""></p> <h4 id="_7-地址解析"><a href="#_7-地址解析" class="header-anchor">#</a> 7.地址解析</h4> <blockquote><p>地址解析就是可以把一个具体的地址转化为经纬度</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>
+var myGeo = new BMap.Geocoder();      
+// 将地址解析结果显示在地图上，并调整地图视野  这里val就是想要查找的地址,point就是返回的经纬度  
+myGeo.getPoint(val, function(point){    
+
+    if (point) {      
+    
+        map.centerAndZoom(point, 16);    
+        
+        map.addOverlay(new BMap.Marker(point));      
+    }      
+    
+});
+     
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf07beb669fdc5?w=1435&amp;h=692&amp;f=gif&amp;s=670933" alt=""></p> <h4 id="_8-逆地址解析"><a href="#_8-逆地址解析" class="header-anchor">#</a> 8.逆地址解析</h4> <blockquote><p>逆地址解析就是把经纬度转化为详细地址，主要分为两种：<br>
+1.指定经纬度获取地址 <br>
+2.鼠标点击地图获取地址</p></blockquote> <p><strong>指定经纬度获取地址</strong></p> <div class="language- extra-class"><pre class="language-text"><code>
+var myGeo = new BMap.Geocoder();      
+// 根据坐标得到地址描述    
+myGeo.getLocation(new BMap.Point(116.364, 39.993), function(result){      
+    if (result){      
+    alert(result.address);      
+    }      
+});
+
+</code></pre></div><p><strong>鼠标点击地图获取地址(地方与地方之间查出来的详情是不一样的，有的可以查到街道，有的就之能查到区县)</strong></p> <div class="language- extra-class"><pre class="language-text"><code>
+var geoc = new BMap.Geocoder();    
+map.addEventListener(&quot;click&quot;, function(e){        
+var pt = e.point;
+geoc.getLocation(pt, function(rs){
+    var addComp = rs.addressComponents;
+    alert(addComp.province + &quot;, &quot; + addComp.city + &quot;, &quot; + addComp.district + &quot;, &quot; + addComp.street + &quot;, &quot; + addComp.streetNumber);
+});       
+
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf07e74aa0650d?w=1435&amp;h=692&amp;f=gif&amp;s=665762" alt=""></p> <blockquote><p>百度地图最厉害的地方就是规划，不管是驾车规划、步行规划等，都是我们平时生活中用的最多的地方，这里就介绍一下驾车规划。</p></blockquote> <h4 id="_9-驾车规划"><a href="#_9-驾车规划" class="header-anchor">#</a> 9.驾车规划</h4> <div class="language- extra-class"><pre class="language-text"><code>
+var driving = new BMap.DrivingRoute(map, { 
+    renderOptions: { 
+        map: map, 
+        autoViewport: true,
+        panel: document.querySelector('r-reslut')
+    } 
+  });
+// 起点
+var start = new BMap.Point(startPoint[0], startPoint[1]);
+// 终点
+var end = new BMap.Point(endPoint[0], endPoint[1]);
+
+driving.search(start, end);
+
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf0f8ebbd7abf3?w=1435&amp;h=692&amp;f=gif&amp;s=688187" alt=""></p> <p>综上 就是我对于百度地图的一些简单操作的一点小见解，其实百度地图还有很多很多有意思的功能，在这里就不和大家说了，如果小伙伴们觉得有意思的话，可以去看一下百度地图的官网，<a href="http://lbsyun.baidu.com" target="_blank" rel="noopener noreferrer">点这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，文中如有错误，欢迎在评论区指正，如果这篇文章帮助到了你，欢迎点赞👍和关注，😀。</p> <hr> <h3 id="推荐阅读"><a href="#推荐阅读" class="header-anchor">#</a> 推荐阅读</h3> <ul><li><a href="https://juejin.im/post/5d6b3b4be51d4562092388a4#heading-8" target="_blank" rel="noopener noreferrer">妈耶，这次终于了解继承了！<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://juejin.im/post/5d6b9608f265da03a6532f52" target="_blank" rel="noopener noreferrer">妈妈再也不用担心我用不好ECharts了<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/other/babel.html" class="prev">
+        babel
+      </a></span> <span class="next"><a href="/other/echarts.html">
+        Echarts
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.bf15a726.js" defer></script><script src="/assets/js/2.9914e370.js" defer></script><script src="/assets/js/220.060a53f4.js" defer></script>
+  </body>
+</html>
